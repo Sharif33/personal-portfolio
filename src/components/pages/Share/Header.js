@@ -28,7 +28,7 @@ const Header = () => {
                                     <NavLink style={({ isActive }) => ({ color: isActive ? 'yellow' : 'white' })} className="nav-link active mx-1 fs-5 " to="/projects">Projects</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link active mx-1 " to="/projects"><a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-outline-dark fw-bold px-4"><i className="fas fa-download"></i>  R E S U M E</button></a></NavLink>
+                                    <a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-outline-dark fw-bold px-4"><i className="fas fa-download"></i>  R E S U M E</button></a>
                                 </li>
                             </ul>
 
