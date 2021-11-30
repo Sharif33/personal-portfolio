@@ -1,11 +1,12 @@
 import React from 'react';
 import "./Banner.css";
 import profile from "../../../images/profile.jpg";
-import resume from "../../../images/Md. Shariful Islam-Resume-2021.pdf";
+// import resume from "../../../images/Md. Shariful Islam-Resume-2021.pdf";
 import Typewriter from 'typewriter-effect';
 import Flash from 'react-reveal/Flash';
 import Slide from 'react-reveal/Slide';
 import Rotate from 'react-reveal/Rotate';
+import { Link } from 'react-router-dom';
 
 const BannerTop = () => {
     return (
@@ -33,10 +34,14 @@ const BannerTop = () => {
                 </div>
                 <div className="col-sm-12 col-md-8">
                     <div className="m-auto p-4 pt-5 text-light text-center">
-                        <Rotate top left>
-                            <div>
-                                <h3>Hello, I'm</h3>
-                                <h1>Sharif Mohammad Rashed</h1>
+                        <div>
+                            <Slide right>
+                                <h3 className="font-monospace">Hello, I'm</h3>
+                            </Slide>
+                            <Slide left>
+                                <h1 className="fw-bold">Sharif Mohammad Rashed</h1>
+                            </Slide>
+                            <Rotate top left>
                                 <h3 className="text-warning"><Typewriter
                                     options={{
                                         strings: ['Web Developer', 'Frontend Developer', 'MERN Stack Developer', 'React Developer'],
@@ -44,11 +49,28 @@ const BannerTop = () => {
                                         loop: true,
                                     }}
                                 /></h3>
-                            </div>
-                        </Rotate>
+                            </Rotate>
+                        </div>
 
-                        <div>
-                            <a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-outline-primary  my-2 fw-bold px-4 py-2"><i className="fas fa-download"></i>  R E S U M E</button></a>
+                        <div className="d-flex justify-content-center align-items-center text-start fw-light px-5 pt-3 mx-auto">
+                            <div className="text-end px-3">
+                                <p>Age :</p>
+                                <p>Address:</p>
+                                <p>Phone :</p>
+                                <p>Email :</p>
+                            </div>
+                            <div className="text-start px-3">
+                                <p>23</p>
+                                <p>Mirpur-12, Dhaka, Bangladesh</p>
+                                <p>+880 1635-501311</p>
+                                <p>md.shariful.islam2511@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div className="mt-4">
+                            <Rotate bottom right>
+                                <Link className="text-decoration-none" to="/contact"><button className="btn btn-outline-light fw-bold px-4 py-2"><i className="fas fa-user-plus"></i> H i r e   M e</button></Link>
+                            </Rotate>
                         </div>
                     </div>
                 </div>
