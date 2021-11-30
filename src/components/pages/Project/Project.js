@@ -1,12 +1,44 @@
-import React from 'react';
-import p1 from "../../../images/bikeValley.png";
-import p2 from "../../../images/holidayTravel.png";
-import p3 from "../../../images/pharmaCare.png";
+import React, { useEffect, useState } from 'react';
+import ProjectDetails from './ProjectDetails';
+// import p1 from "../../../images/bikeValley.png";
+// import p2 from "../../../images/holidayTravel.png";
+// import p3 from "../../../images/pharmaCare.png";
+
 
 const Project = () => {
+
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        fetch(`https://raw.githubusercontent.com/Sharif33/personal-portfolio/main/public/projects.json`)
+            .then(res => res.json())
+            .then(data => setProjects(data))
+    }, [])
+
     return (
         <div style={{ overflowX: 'hidden' }}>
-            <div className="container my-3 p-4 bg-light rounded">
+            <div className="container">
+                <div className="text-center pt-2">
+                    <h2 className="fw-bold">My Projects</h2>
+                </div>
+                <div className="row row-cols-1 row-cols-md-3 m-2 g-4">
+                    {projects.length == 0 ?
+                        <div className="d-flex justify-content-center fs-1">
+                            <button className="btn btn-primary" type="button" disabled>
+                                <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
+                        </div>
+                        :
+                        projects.map(project => <ProjectDetails
+                            key={project._id}
+                            project={project}
+                        >
+                        </ProjectDetails>)
+                    }
+                </div>
+            </div>
+            {/* <div className="container my-3 p-4 bg-light rounded">
                 <h1 >My P R O J E C T S_</h1>
                 <div>
                     <div className="row p-4 shadow my-3">
@@ -54,7 +86,7 @@ const Project = () => {
                                 Users can SignIn/SignUp by their Google Account.
                             </li>
                             <li>
-                                After signin Users can see details of resort, book resort, manage their booking resorts and add their favorite resort.
+                                After signin Users can see details of project, book project, manage their booking projects and add their favorite project.
                             </li>
                             <li>
                                 Responsived for mobile and large devices.
@@ -101,7 +133,7 @@ const Project = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
