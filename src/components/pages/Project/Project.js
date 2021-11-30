@@ -30,7 +30,7 @@ const Project = () => {
                             </button>
                         </div>
                         :
-                        projects.map(project => <ProjectDetails
+                        projects.slice(0, 3).map(project => <ProjectDetails
                             key={project._id}
                             project={project}
                         >
