@@ -1,6 +1,6 @@
 .bg-profile{
     background-image: url('../../../images/cover.png'),linear-gradient(
-        54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));
+        54deg,rgba(74, 76, 179, 0.822) 34%,rgba(0, 0, 0, 0.95));
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,3 +10,8 @@
     background-color: #6d56c1;
 }
 
+.icon-hover:hover{
+    color: yellow !important;
+transform: scale(1.5);
+transition: 0.5s ease;
+}

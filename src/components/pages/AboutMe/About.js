@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import resume from "../../../images/Md. Shariful Islam-Resume-2021.pdf";
 
 const About = () => {
@@ -11,7 +12,7 @@ const About = () => {
                     <p>I am a Web Developer, specialize in front end technologies like JavaScript, React, HTML5, CSS3, Bootstrap5, etc. I have also worked with Node JS, Express JS, MongoDB, .
                         My goal is to satisfy clients, try to understand what they want for their website, help them from beginning to end of the project and give support for every problem. I have no experience at all but I will prove myself with my best.</p>
                     <div className="d-inline-block">
-                        <a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-outline-dark  my-2 fw-bold px-4 py-2">H I R E    M E</button></a>
+                        <Link className="text-decoration-none" to="/contact"><button className="btn btn-outline-dark  my-2 fw-bold px-4 py-2">H I R E    M E</button></Link>
                         <a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-outline-dark  my-2 fw-bold px-4 py-2"><i className="fas fa-download"></i>  R E S U M E</button></a>
                     </div>
                 </div>
