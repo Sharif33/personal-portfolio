@@ -10,7 +10,7 @@ const Project = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch(`https://raw.githubusercontent.com/Sharif33/personal-portfolio/main/public/projects.json`)
+        fetch(`https://raw.githubusercontent.com/Sharif33/personal-portfolio/main/public/myprojects.json`)
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
@@ -31,7 +31,7 @@ const Project = () => {
                         </div>
                         :
                         projects.slice(0, 3).map(project => <ProjectDetails
-                            key={project._id}
+                            key={project.id}
                             project={project}
                         >
                         </ProjectDetails>)
