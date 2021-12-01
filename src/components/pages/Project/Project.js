@@ -16,7 +16,7 @@ const Project = () => {
     }, [])
 
     return (
-        <div style={{ overflowX: 'hidden' }}>
+        <div style={{ overflowX: 'hidden', paddingTop: "70px" }}>
             <div className="container">
                 <div className="text-center pt-2">
                     <h2 className="fw-bold">My Projects</h2>

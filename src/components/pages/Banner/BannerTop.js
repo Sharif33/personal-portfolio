@@ -1,3 +1,4 @@
+// Strict
 import React from 'react';
 import "./Banner.css";
 import profile from "../../../images/profile.jpg";
@@ -10,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 const BannerTop = () => {
     return (
-        <div style={{ overflowX: "hidden" }} className="bg-profile">
+        <div style={{ overflowX: "hidden", paddingTop: "70px" }} className="bg-profile">
             <div className="row p-4">
                 <div className="col-sm-12 col-md-4 text-center">
                     <div className="d-flex justify-content-between align-items-center">
@@ -21,7 +22,7 @@ const BannerTop = () => {
 
                         </div>
                         <Slide left>
-                            <div className="p-2 bg-dark">
+                            <div className="p-2 bg-dark rounded-end">
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://github.com/Sharif33"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-github"></i></a>
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/sharif-rashed-623abb193/"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-linkedin"></i></a>
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://www.facebook.com/sharif.rashed01/"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-facebook"></i></a>

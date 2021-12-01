@@ -25,8 +25,7 @@ const Contact = () => {
         setResult(false)
     }, 5000);
     return (
-        <div style={{ overflowX: "hidden" }} className="bg-light">
-
+        <div style={{ overflowX: "hidden", paddingTop: "70px" }}>
             <div className="row bg-dark">
                 <div className="col-sm-12 mx-auto my-auto col-md-4">
                     <div className="p-4 border text-center rounded">
@@ -65,15 +64,15 @@ const Contact = () => {
                 <div className="col-sm-12 col-md-5 mx-auto">
                     <form className="p-4 m-4 shadow bg-light rounded" ref={form} onSubmit={sendEmail}>
                         <div className="mb-3">
-                            <label for="exampleFormControlInput1" className="form-label">Your Name</label>
+                            <label htmlFor="exampleFormControlInput1" className="form-label">Your Name</label>
                             <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
                         </div>
                         <div className="mb-3">
-                            <label for="exampleFormControlInput1" className="form-label">Email address</label>
+                            <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
                             <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="to_email" required />
                         </div>
                         <div className="mb-3">
-                            <label for="exampleFormControlTextarea1" className="form-label">Message</label>
+                            <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
                             <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message" required></textarea>
                         </div>
                         <div className="mb-3">

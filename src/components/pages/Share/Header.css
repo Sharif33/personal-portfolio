@@ -1,0 +1,28 @@
+.header{position: relative;
+    width: 100%;
+    }
+    
+    .header-inner{position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 99;
+    /* background-color: transparent; */
+    }
+
+    .navbar-scroll{
+        background-color: #223A5E !important;
+        padding: 0;
+        position: fixed;
+        top:0;
+        z-index: 99;
+        box-shadow:0px 1px 10px rgba(0,0,0,0.4);
+        transition-duration: 0.6s; }
+        
+        .navbar-scroll .nav-item .nav-link{
+            color: #fff  !important;
+        }
+
+        .nav-item .nav-link:hover{
+            color: orange !important;
+        }
