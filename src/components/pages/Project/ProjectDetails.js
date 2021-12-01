@@ -4,10 +4,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 const ProjectDetails = ({ project }) => {
-    const { id, name, website, imageweb1, imageweb2, imageweb3, imageweb4, imageweb5, imageweb6 } = project;
+    const { id, name, website, imageweb1, imageweb2, imageweb3, imageweb4 } = project;
     return (
         <div className="my-3">
-            <div className="bg-light shadow">
+            <div className="bg-light shadow" style={{ height: "100%" }}>
                 <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} showStatus={false}>
                     <div>
                         <img src={imageweb1} alt="" />
@@ -32,20 +32,6 @@ const ProjectDetails = ({ project }) => {
                     </div>
                     <div>
                         <img src={imageweb4} alt="" />
-                        <div className="legend">
-                            <h4>{name}</h4>
-
-                        </div>
-                    </div>
-                    <div>
-                        <img src={imageweb5} alt="" />
-                        <div className="legend">
-                            <h4>{name}</h4>
-
-                        </div>
-                    </div>
-                    <div>
-                        <img src={imageweb6} alt="" />
                         <div className="legend">
                             <h4>{name}</h4>
 

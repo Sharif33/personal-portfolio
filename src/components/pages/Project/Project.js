@@ -18,8 +18,8 @@ const Project = () => {
     return (
         <div style={{ overflowX: 'hidden', paddingTop: "70px" }}>
             <div className="container">
-                <div className="text-center pt-2">
-                    <h2 className="fw-bold">My Projects</h2>
+                <div className="p-2">
+                    <h2 className="border-start border-5 border-danger">My Projects</h2>
                 </div>
                 <div className="row row-cols-1 row-cols-md-3 m-2 g-4">
                     {projects.length == 0 ?
