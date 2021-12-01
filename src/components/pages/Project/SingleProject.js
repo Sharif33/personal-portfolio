@@ -15,7 +15,7 @@ const SingleProject = () => {
 
     const projectDetails = projects.find(project => project.id == id)
     return (
-        <div style={{ overflowX: "hidden" }}>
+        <div style={{ overflowX: "hidden", paddingTop: "70px" }}>
             <h2 className="text-warning p-3 text-center"><span className="text-dark">Project : </span>{projectDetails?.name}</h2>
             <div className="container">
                 <div className="row py-2 bg-light my-2">
