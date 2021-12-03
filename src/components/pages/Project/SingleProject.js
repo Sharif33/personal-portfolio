@@ -43,19 +43,17 @@ const SingleProject = () => {
 
                 </div>
                 <div className="py-3 my-4">
-                    <div className="row row-cols-2 row-cols-lg-3 p-3 my-2">
-                        <div className="col"><img className="img-fluid img-hover" src={projectDetails?.imageweb1} alt="" /></div>
-                        <div className="col"><img className="img-fluid img-hover" src={projectDetails?.imageweb2} alt="" /></div>
-                        <div className="col"><img className="img-fluid img-hover" src={projectDetails?.imageweb3} alt="" /></div>
-                        <div className="col"><img className="img-fluid img-hover" src={projectDetails?.imageweb4} alt="" /></div>
-                        <div className="col"><img className="img-fluid img-hover" src={projectDetails?.imageweb5} alt="" /></div>
-                        <div className="col"><img className="img-fluid img-hover" src={projectDetails?.imageweb6} alt="" /></div>
-                        <div className="col"><img className="img-fluid img-hover" src={projectDetails?.imageweb7} alt="" /></div>
-                        <div className="col"><img className="img-fluid img-hover" src={projectDetails?.imageweb8} alt="" /></div>
-                        <div className="col-sm-12 col-md-4"><img className="img-fluid img-hover" src={projectDetails?.imagemob1} alt="" /></div>
-
-                        {/* <div className="col-4 col-lg-2"><img className="img-fluid img-hover" src={projectDetails?.imageweb1} alt="" /></div>
-                    <div className="col-4 col-lg-2"><img className="img-fluid img-hover" src={projectDetails?.imageweb1} alt="" /></div> */}
+                    <div className="row row-cols-2 row-cols-md-4 p-3 my-2">
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb1} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb2} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb3} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb4} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb5} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb6} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb7} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb8} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb9} alt="" /></div>
+                        <div className="col"><img className="img-fluid w-50 img-hover" src={projectDetails?.imageweb10} alt="" /></div>
                     </div>
                 </div>
             </div>
