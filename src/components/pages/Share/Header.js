@@ -10,7 +10,7 @@ const Header = () => {
             <div className="header-inner">
                 <nav className="navbar navbar-expand-lg navbar-dark ms-auto">
                     <div className="container">
-                        <NavLink className="navbar-brand fw-bold fs-3 text-warning" to="/home">SMR</NavLink>
+                        <NavLink className="navbar-brand fw-bold fs-3 text-warning" to="/home">S<span className="text-danger">|M|</span>R</NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
