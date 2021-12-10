@@ -12,7 +12,7 @@
 }
 
 .icon-hover:hover{
-    color: yellow !important;
+color: yellow !important;
 transform: scale(1.5);
 transition: 0.5s ease;
 }
@@ -29,4 +29,17 @@ transition: 0.5s ease;
     
     /* background-color: #6d56c1; */
     /* background-color: #4240A3; */
+}
+
+
+.img-width{
+    width: 13%;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 688px) {
+    .img-width{
+        width: 20%;
+        padding: 5px;
+    }
 }

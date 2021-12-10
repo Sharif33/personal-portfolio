@@ -27,8 +27,8 @@ const Contact = () => {
     return (
         <div style={{ overflowX: "hidden", paddingTop: "70px" }}>
             <div className="row bg-dark">
-                <div className="col-sm-12 mx-auto my-auto col-md-4">
-                    <div className="p-4 border text-center rounded">
+                <div className="col-sm-12 mx-auto my-auto p-4 col-md-4">
+                    <div className="p-5 border text-center rounded">
                         <div className="d-flex justify-content-center align-items-center text-start px-5 pt-3 mx-auto">
                             <div className="text-end px-3 text-primary">
                                 <p>Age :</p>
@@ -43,9 +43,9 @@ const Contact = () => {
                                 <p>md.shariful.islam2511@gmail.com</p>
                             </div>
                         </div>
-                        <div className="d-inline-block px-5 pt-3 text-center">
-                            <Link className="text-decoration-none" to="/contact"><button className="btn btn-outline-info  my-2 fw-bold px-4 py-2"><i className="fas fa-user-plus"></i> H i r e   M e</button></Link>
-                            <a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-outline-warning  my-2 fw-bold px-4 py-2"><i className="fas fa-download"></i>  R E S U M E</button></a>
+                        <div className="d-block pt-3 text-center">
+                            <Link className="text-decoration-none" to="/contact"><button className="btn btn-outline-info  my-2"><i className="fas fa-user-plus"></i> H i r e  M e</button></Link>
+                            <a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-outline-warning my-2"><i className="fas fa-download"></i>  R E S U M E</button></a>
                         </div>
                     </div>
                 </div>
