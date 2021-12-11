@@ -17,19 +17,19 @@ const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul className="navbar-nav mx-auto">
                                 <li className="nav-item">
-                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#818CF8' })} className="nav-link active mx-1  " aria-current="page" to="/home">Home</NavLink>
+                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })} className="nav-link active mx-1  " aria-current="page" to="/home">HOME</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#818CF8' })} className="nav-link active mx-1  " to="/contact">Contact Me</NavLink>
+                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })} className="nav-link active mx-1  " href="#contact" to="/contact">CONTACT ME</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#818CF8' })} className="nav-link active mx-1  " to="/about">About Me</NavLink>
+                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })} className="nav-link active mx-1  " to="/about">ABOUT ME</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#818CF8' })} className="nav-link active mx-1  " to="/projects">Projects</NavLink>
+                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })} className="nav-link active mx-1  " to="/projects">PROJECTS</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#818CF8' })} className="nav-link active mx-1  " to="/blogs">Blogs</NavLink>
+                                    <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })} className="nav-link active mx-1  " to="/blogs">BLOGS</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-outline-warning px-4"><i className="fas fa-download"></i>  R E S U M E</button></a>
@@ -37,10 +37,10 @@ const Header = () => {
                             </ul>
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item">
-                                    <a className="text-decoration-none text-info mx-1 nav-link" href="tel:+880-01635-501311"><span><i className="fas fa-phone-alt text-danger"> </i></span> +880 1635-501311</a>
+                                    <a className="text-decoration-none text-light mx-1 nav-link" href="tel:+880-01635-501311"><span><i className="fas fa-phone-alt text-warning"> </i> : </span> +880 1635-501311</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="text-decoration-none text-info mx-1 nav-link" href="mailto:md.shariful.islam2511@gmail.com"><span><i className="far fa-envelope text-danger"> </i></span> md.shariful.islam2511@gmail.com</a>
+                                    <a className="text-decoration-none text-light mx-1 nav-link" href="mailto:md.shariful.islam2511@gmail.com"><span><i className="far fa-envelope text-warning"> : </i></span> md.shariful.islam2511@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -51,4 +51,5 @@ const Header = () => {
     );
 };
 
+// style.={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })}
 export default Header;

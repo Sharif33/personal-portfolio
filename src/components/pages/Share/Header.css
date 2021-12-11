@@ -24,8 +24,7 @@
         }
 
         .nav-item .nav-link:hover{
-            color: orange !important;
-            padding: auto;
-            border-radius: 10px;
-            transition: .6s ease;
+            font-weight: bold;
+            transform: scale(1.1);
+            transition: .5s ease;
         }

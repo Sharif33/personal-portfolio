@@ -54,7 +54,7 @@ const BannerTop = () => {
                         </div>
 
                         <div className="d-flex justify-content-center align-items-center text-start fw-light px-5 pt-3 mx-auto">
-                            <div className="text-end px-3">
+                            <div className="text-end text-dark fw-bold px-3">
                                 <p>Age :</p>
                                 <p>Address:</p>
                                 <p>Phone :</p>

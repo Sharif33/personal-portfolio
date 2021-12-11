@@ -7,7 +7,7 @@ const ProjectDetails = ({ project }) => {
     const { id, name, website, imageweb1, imageweb2, imageweb3, imageweb4 } = project;
     return (
         <div className="my-3">
-            <div className="bg-light shadow" style={{ height: "100%" }}>
+            <div className="bg-light shadow rounded py-3" style={{ height: "100%" }}>
                 <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} showStatus={false}>
                     <div>
                         <img src={imageweb1} alt="" />

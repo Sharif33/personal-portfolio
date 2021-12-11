@@ -16,10 +16,10 @@ const SingleProject = () => {
 
     const projectDetails = projects.find(project => project.id == id)
     return (
-        <div className="bg-light" style={{ overflowX: "hidden", paddingTop: "70px" }}>
-            <h2 className="text-warning p-3 text-center"><span className="text-dark">Project : </span>{projectDetails?.name}</h2>
+        <div className="bg-dark" style={{ overflowX: "hidden", paddingTop: "70px" }}>
+            <h2 className="text-warning p-3 text-center"><span className="text-light">Project : </span>{projectDetails?.name}</h2>
             <div className="container">
-                <div className="row py-2 bg-light my-2">
+                <div className="row py-2 my-2">
                     <div className="col-sm-12 col-md-6 p-3 bg-info">
                         <ul>
                             <h4 className="text-success"> Technology Used :</h4>
