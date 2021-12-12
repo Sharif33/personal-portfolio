@@ -39,8 +39,8 @@ const ProjectDetails = ({ project }) => {
                     </div>
                 </Carousel>
                 <div className="d-flex justify-content-between p-4">
-                    <a className="text-decoration-none px-2" rel="noreferrer" target="_blank" href={website}><button className="btn btn-danger">Live Preview</button></a>
-                    <Link to={`project/${id}`}><button className="btn btn-outline-success">See Details</button></Link>
+                    <a className="text-decoration-none px-2" rel="noreferrer" target="_blank" href={website}><button className="btn btn-custom-2">Live Preview</button></a>
+                    <Link to={`project/${id}`}><button className="btn  btn-custom">See Details</button></Link>
                 </div>
             </div>
         </div>

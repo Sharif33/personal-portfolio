@@ -70,7 +70,7 @@ const BannerTop = () => {
 
                         <div className="mt-4">
                             <Rotate bottom right>
-                                <Link className="text-decoration-none" to="/contact"><button className="btn btn-outline-light fw-bold px-4 py-2"><i className="fas fa-user-plus"></i> H i r e   M e</button></Link>
+                                <Link className="text-decoration-none" to="/contact"><button className="btn btn-custom fw-bold px-4 py-2"><i className="fas fa-user-plus"></i> H i r e   M e</button></Link>
                             </Rotate>
                         </div>
                     </div>

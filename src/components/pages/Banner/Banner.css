@@ -18,7 +18,10 @@
 
 
 .icon-hover:hover{
-color: yellow !important;
+    background-image: linear-gradient(45deg, #303f9f,#7b1fa2) !important;
+/* color: yellow !important; */
+padding: 2px;
+border-radius: 50px;
 transform: scale(1.5);
 transition: 0.5s ease;
 }
@@ -35,6 +38,28 @@ transition: 0.5s ease;
     
     /* background-color: #6d56c1; */
     /* background-color: #4240A3; */
+}
+.btn-custom{
+    background: linear-gradient(45deg, #303f9f,#7b1fa2) !important;
+    color: white;
+    box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%), 0 7px 12px -5px rgb(156 39 176 / 46%) !important;
+}
+.btn-custom:hover{
+    color: white;
+    background: linear-gradient(45deg,#7b1fa2, #303f9f) !important;
+}
+.btn-custom-2{
+    /* background: linear-gradient(45deg,#0288d1,#26c6da) !important; */
+    /* background: linear-gradient(45deg,#f11504,#e8508f) !important; */
+    background: linear-gradient(45deg,#ec0554,#f7538a) !important;
+    color: white;
+    /* box-shadow: 0 2px 2px 0 rgb(0 188 212 / 14%), 0 3px 1px -2px rgb(0 188 212 / 20%), 0 1px 5px 0 rgb(0 188 212 / 12%); */
+    /* box-shadow: 0 14px 26px -12px rgb(244 67 54 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(244 67 54 / 20%); */
+    box-shadow: 0 14px 26px -12px rgb(233 30 99 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(233 30 99 / 20%);
+}
+.btn-custom-2:hover{
+    background: linear-gradient(45deg,#f7538a,#ec0554) !important;
+    color: white;
 }
 .align-custom{
     text-align: justify !important;
