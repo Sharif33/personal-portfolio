@@ -27,6 +27,7 @@ const BannerTop = () => {
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/sharif-rashed-623abb193/"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-linkedin"></i></a>
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://www.facebook.com/sharif.rashed01/"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-facebook"></i></a>
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://www.instagram.com/rashu_33/"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-instagram"></i></a>
+                                <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://discord.com/channels/926693183734304769/926693184279547916"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-discord"></i></a>
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://t.me/Rashu33"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-telegram"></i></a>
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCi_qzc-uH_Aei4aRd5Pr73w"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-youtube"></i></a>
                             </div>
@@ -70,7 +71,7 @@ const BannerTop = () => {
 
                         <div className="mt-4">
                             <Rotate bottom right>
-                                <Link className="text-decoration-none" to="/contact"><button className="btn btn-custom fw-bold px-4 py-2"><i className="fas fa-user-plus"></i> H i r e   M e</button></Link>
+                                <Link className="text-decoration-none" to="/contact"><button className="btn btn-outline-warning fw-bold px-4 py-2"> H i r e  M e  <i className="fas fa-user-plus"> </i></button></Link>
                             </Rotate>
                         </div>
                     </div>
