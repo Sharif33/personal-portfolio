@@ -1,0 +1,231 @@
+.wrapper {
+    display: block;
+    position: relative;
+    border-left: 35px solid #369;
+  }
+  
+  .wrapper .wrapper-text {
+    font: bold 14px Sans-Serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #369;
+    color: #fff;
+    padding: 5px 10px;
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+  }
+
+  .arrow:hover{
+    background-color: #F4E11E !important;
+    color: white;
+    box-shadow: 0 14px 26px -12px rgb(255 152 0 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(255 152 0 / 12%) !important;
+    border: 1px solid #F4E11E;
+    padding: 0;
+  }
+
+  .front-end{
+      margin-top: -30px;
+      margin-right: -30px;
+  }
+
+  .back-end{
+      margin-bottom: -30px;
+      margin-left: -30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .front-end{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+  
+    .back-end{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .wrapper {
+        border-left: 34.5px solid #369;
+      }
+  }
+  @media only screen and (max-width: 992px) and (min-width: 600px) {
+    .front-end{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+  
+    .back-end{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+  }
+
+/* Main Page */
+.p-phono .p-home{
+    height: 480px;
+    background-position: top;
+    transition: ease-in-out 5s;
+    background: url('../../../images/phono.png');
+    background-size: cover ;
+    overflow-x: hidden;
+    position: relative;    
+
+}
+.p-phono .p-home:hover{
+    background-position: bottom !important;
+    background-color: aqua !important;
+}
+.p-phono .p-shop{
+    height: 480px;
+    background-position: top;
+    transition: ease-in-out 5s;
+    background: url('../../../images/phono-shop.png');
+    background-size: cover ;
+    overflow-x: hidden;
+    position: relative;    
+
+}
+.p-phono .p-shop:hover{
+    background-position: bottom !important;
+    background-color: aqua !important;
+}
+
+.p-phono .p-pdetails{
+    height: 480px;
+    background-position: top;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-pditails.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-pdetails:hover{
+    background-position: bottom !important;
+}
+.p-phono .p-order{
+    height: 480px;
+    background-position: top;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-feature.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-order:hover{
+    background-position: bottom !important;
+}
+.p-phono .p-contact{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-contact.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-contact:hover{
+    background-position: right !important;
+}
+.p-phono .p-about{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-about.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-about:hover{
+    background-position: right !important;
+}
+
+/* Authentication  & User*/
+.p-phono .p-login{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-logIn.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-login:hover{
+    background-position: right !important;
+}
+.p-phono .p-myOrder{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-d-my-order.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-myOrder:hover{
+    background-position: right !important;
+}
+.p-phono .p-payment{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-payment.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-payment:hover{
+    background-position: right !important;
+}
+
+/* Admin Dashboard */
+.p-phono .p-mngOrder{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-da-morder.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-mngOrder:hover{
+    background-position: right !important;
+}
+.p-phono .p-mngProducts{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-da-mproducts.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-mngProducts:hover{
+    background-position: right !important;
+}
+.p-phono .p-update{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-da-update.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-update:hover{
+    background-position: right !important;
+}
+.p-phono .p-addProducts{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-da-addproducts.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-addProducts:hover{
+    background-position: right !important;
+}
+.p-phono .p-makeAdmin{
+    height: 480px;
+    background-position: left;
+    transition: ease-in-out 4s;
+    background: url('../../../images/phono-da-mAdmin.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-phono .p-makeAdmin:hover{
+    background-position: right !important;
+}

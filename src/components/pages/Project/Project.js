@@ -12,10 +12,10 @@ const Project = () => {
     }, [])
 
     return (
-        <div className="bg-dark" style={{ overflowX: 'hidden', paddingTop: "50px" }}>
+        <div id='projects'style={{ overflowX: 'hidden', paddingTop: "70px" }}>
             <div className="container">
                 <div className="p-2">
-                    <h4 className="fw-bold border-start text-warning px-2 border-5 border-danger">M Y . P R O J E C T S</h4>
+                <h4 className="text-center"> <span className='shadow-purple rounded-pill btn-custom'>Projects</span> </h4>
                 </div>
                 <div className="row row-cols-1 row-cols-md-3 m-2 g-4">
                     {projects.length == 0 ?
