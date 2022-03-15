@@ -9,9 +9,20 @@ import Project from "./components/pages/Project/Project";
 import SingleProject from "./components/pages/Project/SingleProject";
 import Footer from "./components/pages/Share/Footer";
 import Header from "./components/pages/Share/Header";
+import logo from './images/rashed-logo.png';
 
 function App() {
+  const [ spinner, setSpinner ] = React.useState(true);
+
+  // It will be executed before rendering
+
+  React.useEffect(() => {
+    setTimeout(() => setSpinner(false), 1500)
+  }, []);
   return (
+    <>
+    {
+      !spinner && 
     <div className="App">
       <Router>
         <Header></Header>
@@ -30,6 +41,17 @@ function App() {
         <Footer></Footer>
       </Router>
     </div>
+    }
+    {
+      spinner && <div>
+       <img className="img-fluid loader" src={logo} alt="" />
+       <div className="loader-2">
+
+       </div>
+      </div>
+    }
+    
+    </>
   );
 }
 

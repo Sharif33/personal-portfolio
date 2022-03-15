@@ -12,7 +12,7 @@ const About = () => {
             </div>
             <div className="py-3">
                 <div className="container">
-                    <h4 className="text-center"> <span className='shadow-purple rounded-pill btn-custom '>About Me</span> </h4>
+                    <h3 className="text-center"><span className='bottom-border rounded-pill'>About Me</span></h3>
                     {/* <div className='indexZ text-end'>
                         <img className="img-fluid rounded-circle border p-1 border-dark img-contact" src={profile} alt="" />
                     </div> */}

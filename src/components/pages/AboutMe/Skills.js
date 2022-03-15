@@ -26,7 +26,7 @@ const Skills = () => {
     return (
         <div>
             <div className="container my-5">
-            <h4 className="text-center"> <span className='shadow-purple rounded-pill btn-custom mb-3'>Key Skills</span> </h4>
+            <h3 className="text-center mb-5"> <span className='rounded-pill bottom-border '>Key Skills</span> </h3>
                 <div className="row row-cols-1 row-cols-md-4 g-2">
                     <div className="col text-center skill px-2 my-2">
                         <img className='img-fluid rounded-circle border skill-margin' src={js} alt="" />

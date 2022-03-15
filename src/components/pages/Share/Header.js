@@ -12,7 +12,7 @@ const Header = () => {
                 <nav className="navbar fixed-top bg-skill navbar-expand-lg navbar-dark me-auto">
                     <div className="container-fluid px-4">
                         <NavHashLink className="navbar-brand" to="/#home">
-      <img src={logo} alt="" width="50" height="45"/>
+      <img className='my-logo' src={logo} alt="" width="50" height="45"/>
     </NavHashLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -23,10 +23,10 @@ const Header = () => {
                                     <a className="text-decoration-none text-light mx-1 nav-link" href="tel:+880-01635-501311"><span><i className="fas fa-phone-alt text-info"> :  </i></span> +880 1635-501311</a>
                                 </li> */}
                                 <li className="nav-item">
-                                    <a className="text-decoration-none text-light mx-1 nav-link font-monospace" href="mailto:md.shariful.islam2511@gmail.com"><span><i className="far fa-envelope text-sky"> : </i></span> md.shariful.islam2511@gmail.com</a>
+                                    <a className="text-decoration-none text-sky mx-1 font-monospace" href="mailto:md.shariful.islam2511@gmail.com">md.shariful.islam2511@gmail.com</a>
                                 </li>
                             </ul>
-                            <ul className="navbar-nav ms-auto font-monospace">
+                            <ul className="navbar-nav ms-auto font-monospace text-light-slate">
                                 <li className="nav-item">
                                     <NavHashLink  className="nav-link active mx-1  " aria-current="page" to="/home#home">Home</NavHashLink>
                                 </li> 
@@ -44,7 +44,7 @@ const Header = () => {
                                     <NavHashLink  className="nav-link active mx-1  " to="/home#blogs">Blogs</NavHashLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="text-decoration-none" href={resume} download={resume}> <button className="px-4 py-1 bg-skill rounded border-css text-info">Resume</button></a>
+                                    <a className="text-decoration-none" href={resume} download={resume}> <button className="my-btn px-4 py-1 bg-skill rounded border-css text-info">Resume</button></a>
                                 </li>
                             </ul>
                             

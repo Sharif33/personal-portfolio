@@ -28,6 +28,9 @@
         
            
         } */
+        .nav-link{
+            color: #ccd6f6 !important;
+        }
         .nav-link:hover{
             font-weight: bold;
             color: #64ffda !important;
