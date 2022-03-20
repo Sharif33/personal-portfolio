@@ -1,0 +1,109 @@
+.project-details{
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+    margin-left: -100px;
+    background-color: #112240;
+    text-align:justify;
+    font-family: 'Raleway', sans-serif;
+}
+.img-none{
+    display: none;
+    position: relative;
+    height: 420px;
+    /* background-color: #64ffdb9d; */
+}
+.p-section{
+    text-align: right;
+    width: 75%;
+}
+
+.p-details{
+    background-color: #468375a4;
+    position: absolute;
+    height: 440px;
+    width: 100%;
+}
+.p-btn{
+    display: none;
+    position: absolute;
+    top: 43% !important;
+    left: 47% !important;
+}
+.p-container{
+    position: relative;
+    z-index: 1;
+}
+.p-container .p-img{
+    height: 440px;
+    background-position: top;
+    transition: ease-in-out 5s;
+    background: url('../../../images/phono.png');
+    background-size: cover ;
+    overflow-x: hidden;
+    position: relative;  
+    border-radius: 0.6%;
+
+}
+.p-container .p-img:hover{
+    background-position: bottom !important;
+
+}
+.p-container .p-img:hover .p-details{
+    display: none;  
+    /* background-color: rgba(3, 3, 3, 0.055); */
+}
+.p-container .p-img:hover .p-btn{
+    display: block; 
+}
+.p-container .p-img2{
+    height: 480px;
+    background-position: top;
+    transition: ease-in-out 4s;
+    background: url('../../../images/bikeballey.png') !important;
+    background-size: cover !important;
+    overflow-x: hidden;
+}
+.p-container .p-img2:hover{
+    background-position: bottom !important;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+    .project-details{
+    margin-left: 0;
+    margin: auto;
+    background-color: transparent;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.p-section{
+    /* background: url('../../../images/phono.png');
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+   opacity: 50%;
+    overflow-x: hidden;
+    position: relative;  */
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    padding: 17px; 
+    top: 0;
+    left: 0;
+    background-color: #0b1c31f3;
+    border-radius: 0.5%;
+    height: 390px;
+}
+.img-none{
+    display: block;
+    width: 100%;
+    height: 380px;
+}
+.p-container .p-img{
+    display: none;
+    /* height: 320px; */
+}
+}

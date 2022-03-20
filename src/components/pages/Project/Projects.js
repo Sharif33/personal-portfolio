@@ -4,15 +4,18 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import SpeedDial from "@mui/material/SpeedDial";
-import SpeedDialIcon from "@mui/material/SpeedDialIcon";
-import SpeedDialAction from "@mui/material/SpeedDialAction";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InfoIcon from "@mui/icons-material/Info";
+// import SpeedDial from "@mui/material/SpeedDial";
+// import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+// import SpeedDialAction from "@mui/material/SpeedDialAction";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import InfoIcon from "@mui/icons-material/Info";
 import { Link } from 'react-router-dom';
 import "./SingleProjects.css";
-import { Language } from "@mui/icons-material";
-import { CgArrowLongRight } from "react-icons/cg";
+// import { Language } from "@mui/icons-material";
+// import { CgArrowLongRight } from "react-icons/cg";
+import './Projects.css';
+import { RiGithubLine, RiInformationLine, RiExternalLinkLine, RiAddLine } from "react-icons/ri";
+import phono from '../../../images/phono.png';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -81,13 +84,15 @@ const Projects = () => {
           </Box>
           <TabPanel value={value} index={0}>
             <div className="row p-container">
-              <div className="col-md-4 p-2">
-                <div className="p-img rounded-top shadow">
+              <div className="col-md-10 mx-auto col-sm-12 p-2">
+                <div className="d-md-flex justify-content-between align-items-center">
+                  <div className="w-100">
+                    <div className="p-img">
                   <div className="p-details"></div>
                   <div className="p-btn">
-                  <h1 className="text-success">+</h1>
+                  <h1 className="text-success"><RiAddLine/></h1>
                   </div>
-                  <Box
+                  {/* <Box
                   sx={{
                     height: 480,
                     transform: "translateZ(0px)",
@@ -115,18 +120,43 @@ const Projects = () => {
                   
                   
                   </SpeedDial>
-                </Box>
+                </Box> */}
                   
                 </div>
-                <Link className="text-decoration-none" to="/phono"><div className="p-2 d-flex justify-content-center align-items-center border-js shadow bg-dark">
+                {/* <Link className="text-decoration-none" to="/phono"><div className="p-2 d-flex justify-content-center align-items-center border-js shadow bg-dark">
                     <h5 className="text-light pt-1">PHONO</h5>
                     <span><CgArrowLongRight className="border-js arrow text-light rounded-circle fs-1 mx-2 p-2"/></span>
-                  </div></Link>
+                  </div></Link> */}
+                  </div>
+                    <div>
+                      <img className="img-none img-fluid shadow" src={phono} alt="" />
+                    </div>
+                  <div className="p-section">
+                    <small className="text-sky font-monospace">Fullstack project</small>
+                    <h3 className='text-lightest-slate'><span className='text-warning fw-bold'>PH</span><span className="text-danger fw-bold">|O|</span><span className="text-warning fw-bold">NO</span></h3>
+                    <div className="text-light-slate rounded project-details">
+                      <p>Full-Stack web application including customize admin panel as well as search and filter option with <span className="text-sky">MERN</span>. Used <span className="text-sky">Firebase</span> for login system. Used <span className="text-sky">Stripe</span> for payment and <span className="text-sky">Material UI & Bootstrap5</span> for styles.</p>
+                    </div>
+                    <div className="pt-3 pb-1 text-light-slate font-monospace">
+                      <small><span className="mx-2 ">React</span> <span className="mx-2 ">MongoDB</span> <span className="mx-2 ">Node Js</span> <span className="mx-2 ">Firebase</span> <span className="mx-2 ">Stripe</span></small>
+                    </div>
+                    <div>
+                      <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href="https://github.com/Sharif33/phono"><RiGithubLine title= "Source Code" className="icon-hover" /></a>
+
+                      <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href="https://phono-3a490.web.app/"><RiExternalLinkLine title= "Live Demo" className="icon-hover" /></a>
+                      
+                      <Link className="text-lightest-slate fs-3 ms-2" to="/phono" ><RiInformationLine title= "See Deatails"  className="icon-hover"/></Link>
+
+                    </div>
+                  </div>
+                  
+                </div>
+                
               </div>
-              <div className="col-md-4 p-2 ">
+              <div className="col-md-6 p-2 ">
                 <div className="rounded p-img2"></div>
               </div>
-              <div className="col-md-4 p-2">
+              <div className="col-md-6 p-2">
                 <div className=" p-img rounded"></div>
               </div>
             </div>

@@ -1,9 +1,9 @@
 body {
   margin: 0;
   /* background-color: #2A2C39; */
-  background-color: #0A192F;
+  background-color: #0A192F !important;
   /* background-color: #FEEAF3; */
-  font-family: 'Baloo Bhaijaan 2', cursive;
+  font-family: 'Baloo Bhaijaan 2', cursive !important;
   overflow-x: hidden;
 
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','rambla',

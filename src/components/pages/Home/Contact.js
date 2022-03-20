@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import sharif from '../../../images/sharif-pHero.jpg';
 import { Link } from 'react-router-dom';
@@ -11,6 +11,39 @@ import { FcCellPhone } from "react-icons/fc";
 import { HiLocationMarker } from "react-icons/hi";
 
 const Contact = () => {
+    // LinkedIn
+
+    useEffect(() => {
+        const script = document.createElement('script');
+    
+        script.src = 'http://platform.linkedin.com/badges/js/profile.js';
+        script.async = true;
+        script.defer = true;
+    
+        document.body.appendChild(script);
+    
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []);
+
+    // Github
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = '//cdn.jsdelivr.net/github-cards/latest/widget.js';
+        script.async = true;
+        script.defer = true;
+    
+        document.body.appendChild(script);
+    
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []);
+
+
+    // Emailjs form
     const form = useRef();
     const [result, setResult] = useState(false);
     const sendEmail = (e) => {
@@ -33,96 +66,69 @@ const Contact = () => {
         <div id='contact' style={{ overflowX: "hidden", paddingTop: "80px" }}>
             <div className="container">
             <h3 className="text-center  mb-5"> <span className='rounded-pill bottom-border'>Get In Touch</span> </h3>
-                {/* <div className="text-center mx-auto my-auto p-3 indexZ">
-                    <div>
-                        <h3 className="text-info"><Typewriter
-                            options={{
-                                strings: ['Hello, I am...', 'Sharif Mohammad Rashed', 'I am a...', 'Web Developer', 'Frontend Developer', 'MERN Stack Developer', 'React Developer'],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        /></h3>
-                        <img className="img-fluid rounded-circle border p-1 border-dark img-contact" src={sharif} alt="" />
-                    </div>
-                </div> */}
                 <div className="row">
-                    <div className="col-sm-12 mx-auto col-md-6 p-4 font-monospace">
-                        {/* <div className="text-center mt-5 p-4">
-                            <div className="d-flex justify-content-center align-items-center text-start px-5 pt-3 mx-auto">
-                                <div className="text-end px-3 text-dark">
-                                    <p>Address:</p>
-                                    <p>Phone :</p>
-                                    <p>Email :</p>
-                                </div>
-                                <div className="text-start px-3 text-light">
-                                    <p>Mirpur-12, Dhaka, Bangladesh</p>
-                                    <p>+880 1635-501311</p>
-                                    <p>md.shariful.islam2511@gmail.com</p>
-                                </div>
-                            </div>
-                            <div className="d-block pt-3 text-center">
-                                <Link className="text-decoration-none" to="/contact"><button className="btn btn-dark  my-2"><i className="fas fa-user-plus"></i> H i r e  M e</button></Link>
-                                <a className="text-decoration-none" href={resume} download={resume}> <button className="btn btn-light my-2"><i className="fas fa-download"></i>  R E S U M E</button></a>
-                            </div>
-                        </div> */}
-                    <div className='d-flex  align-items-center text-info'>
-                        <div>
-                            <AiOutlineMail className='fs-1 rounded-circle bg-light p-1 border-js'/>
-                        </div>
-                        <div>
-                        <a className="text-decoration-none text-light-slate mx-1 nav-link fw-lighter" href="mailto:md.shariful.islam2511@gmail.com">md.shariful.islam2511@gmail.com</a>
+                    <div className="col-sm-12 mx-auto col-md-4 p-4">
+                        <div style={{height:'9.5em'}} className='text-center py-3 bg-skill-back rounded font-custom'>
+                                <AiOutlineMail className='fs-1 text-purple rounded-circle bg-light p-1 custom-border'/>
+                                <p className='text-sky py-2'>Email</p>
+                                <a className="text-decoration-none text-light-slate" href="mailto:md.shariful.islam2511@gmail.com">md.shariful.islam2511@gmail.com</a>
                         </div>
                     </div>
-                    <span className="vertical-line-contact"></span>
-                    {/* <div className='d-flex align-items-center'>
-                        <div >
-                            <FcCellPhone className='fs-1 rounded-circle bg-light p-1 border-react'/>
+                    
+                    <div className='col-sm-12 mx-auto col-md-4 p-4'>
+                         <div style={{height:'9.5em'}} className='bg-skill-back text-center py-3 rounded font-custom'>
+                            <HiLocationMarker className='text-purple fs-1 rounded-circle bg-light p-1 custom-border'/>
+                            <p className='text-sky py-2'>Address</p>
+                            <p className="text-light-slate">Pallabi, Mirpur, Dhaka, Bangladesh</p>
                         </div>
-                        <div>
-                        <a className="text-decoration-none text-light fw-lighter mx-1 nav-link" href="tel:+8801635501311">+880 1635-501311</a>
-                        </div>
-                    </div>
-                    <span className="vertical-line-contact"></span> */}
-                    <div>
-                         <div className='d-flex align-items-center'>
-                        <div style={{color:'#7b1fa2'}}>
-                            <HiLocationMarker className='fs-1 rounded-circle bg-light p-1 custom-border'/>
-                        </div>
-                        <div>
-                        <p className="text-light-slate fw-lighter mx-1 nav-link">Pallabi, Mirpur, Dhaka, Bangladesh</p>
-                        </div>
-                    </div>
                     </div>
                    
+                   <div className='col-sm-12 mx-auto col-md-4 p-4 font-monospace'>
+                       <iframe  style={{height:'9.5em'}} className='w-100 rounded' title='location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.9014983311095!2d90.35699666490606!3d23.822101484554207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c13b96515cd1%3A0x1d3ec1947521d0e0!2sPallabi%20Extension%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1646801729099!5m2!1sen!2sbd"  allowfullscreen="" loading="lazy"></iframe>
+                    </div> 
+
+                    <div className='my-5 row mx-auto'>
+                        <div className='font-custom text-center text-light pb-2 '>
+                            <small ><span className="border-bottom border-info fst-italic">Follow Me On Social Media</span></small>
+                        </div>
+                        <div className="col-sm-12 col-md-4">
+                            {/* Github */}
+                        
+                            <div  className='py-2 rounded'>
+                                <div className="github-card" data-github="Sharif33" data-width="350" data-height="" data-theme="default">
+                                </div>   
+                            </div>
+                        {/* linkedIn */}
+                        
+                            <div  className='py-2 rounded w-100'>
+                                <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="sharif-rashed-623abb193" data-version="v1">
+                                </div>
+                            </div> 
+                       
+                        
+                        </div>
                     
-                    <iframe className='w-100 px-2 rounded' title='location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.9014983311095!2d90.35699666490606!3d23.822101484554207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c13b96515cd1%3A0x1d3ec1947521d0e0!2sPallabi%20Extension%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1646801729099!5m2!1sen!2sbd"  allowfullscreen="" loading="lazy"></iframe>
-
-                    </div>
-
-                    <div className="col-sm-12 col-md-6 mx-auto  text-lightest-slate font-monospace">
-                        <form className="p-4 " ref={form} onSubmit={sendEmail}>
+                    <div className="col-sm-12 col-md-8 mx-auto">
+                        <form className="p-4 text-lightest-slate font-custom" ref={form} onSubmit={sendEmail}>            
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Your Name<span className='text-danger'>*</span></label>
-                                <input type="text" className="form-control border-react bg-skill" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
+                                <input type="text" className="form-control border-react bg-skill text-light-slate" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Email<span className='text-danger'>*</span></label>
                                 <input type="email" className="form-control border-react bg-skill" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
                             </div>
+                                
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Message<span className='text-danger'>*</span></label>
-                                <textarea className="form-control border-react bg-skill" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required></textarea>
+                                <textarea style={{height:'8em'}}  className="form-control border-react bg-skill text-light-slate" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required>
+                                </textarea>
                             </div>
-                            <div className="mb-3">
+                            
+                            <div className="mb-3 text-end p-2">
                                 <input className="border-css my-btn bg-skill shadow text-sky py-2 rounded px-5" type="submit" value="Send" />
-                            </div>
-                            {/* <label>Name</label>
-                <input type="text" name="full_name" />
-                <label>Email</label>
-                <input type="email" name="to_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" /> */}
+                            </div>    
+                           
                         </form>
                         <div>
                             {
@@ -132,6 +138,8 @@ const Contact = () => {
                             }
                         </div>
                     </div>
+
+                    </div>    
                 </div>
             </div>
         </div>

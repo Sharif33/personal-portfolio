@@ -13,6 +13,9 @@ import Rotate from 'react-reveal/Rotate';
 import { RiLinkedinLine,RiGithubLine,RiFacebookLine,RiInstagramLine,RiTelegramLine,RiYoutubeLine } 
 from "react-icons/ri";
 import { SiDiscord } from "react-icons/si";
+import '../AboutMe/Skill.css';
+
+
 const BannerTop = () => {
     const form = useRef();
     const [result, setResult] = useState(false);
@@ -69,7 +72,7 @@ const BannerTop = () => {
                                 <h1 className="my-name fw-bold text-lightest-slate">Sharif M Rashed</h1>
                             </Slide>
                             <Rotate top left>
-                                <h2 className="text-lightest-slate fw-bold"><Typewriter
+                                <h2 className="text-lightest-slate fw-bold font-custom"><Typewriter
                                     options={{
                                         strings: ['Web Developer', 'Frontend Developer', 'MERN Stack Developer', 'React Developer'],
                                         autoStart: true,
@@ -85,24 +88,11 @@ const BannerTop = () => {
                             </h1>
                         </div>
 
-                        {/* <div className="d-flex justify-content-center align-items-center text-start  px-5 pt-3 mx-auto">
-                            <div className="text-end text-sky px-3">
-                                <p>Age :</p>
-                                <p>Address:</p>
-                                <p>Phone :</p>
-                                <p>Email :</p>
-                            </div>
-                            <div className="text-start text-light px-3 fw-lighter">
-                                <p>23</p>
-                                <p>Mirpur-12, Dhaka, Bangladesh</p>
-                                <p>+880 1635-501311</p>
-                                <p>md.shariful.islam2511@gmail.com</p>
-                            </div>
-                        </div> */}
+                        
 
                         <div className="mt-4">
                             <Rotate bottom right>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" className="px-5 py-2 bg-skill btn-lg border-css text-info my-btn"> Hire  Me</button></Rotate>
+                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" className="px-5 py-2 bg-skill btn-lg border-css text-info my-btn "> Hire  Me</button></Rotate>
                             {/* modal */}
                                 <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -114,22 +104,22 @@ const BannerTop = () => {
                                     </div>
                                     
                                     {/* form */}
-                                <div className="mx-auto  text-light-slate font-monospace">
+                                <div className="mx-auto  text-light-slate font-custom">
                         <form className="p-4 " ref={form} onSubmit={sendEmail}>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Your Name<span className='text-danger'>*</span></label>
-                                <input type="text" className="form-control border-react bg-skill" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
+                                <input type="text" className="form-control border-css bg-skill" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Email<span className='text-danger'>*</span></label>
-                                <input type="email" className="form-control border-react bg-skill" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
+                                <input type="email" className="form-control border-css bg-skill" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Message<span className='text-danger'>*</span></label>
-                                <textarea className="form-control border-react bg-skill" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required></textarea>
+                                <textarea className="form-control border-css bg-skill text-light-slate" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required></textarea>
                             </div>
                             <div className="mb-3 text-end">
-                                    <input className="border-css bg-skill shadow text-sky py-2 rounded px-5" type="submit" value="Send" />
+                                    <input className="border-css my-btn bg-skill shadow text-sky py-2 rounded px-5" type="submit" value="Send" />
                                 </div>
                         </form>
                         <div>

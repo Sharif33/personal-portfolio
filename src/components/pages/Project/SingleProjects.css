@@ -2,50 +2,7 @@
     transition: 1s ease;
     transform: scale(1.2);
 }
-.p-details{
-    display: none;
-    position: absolute;
-    height: 480px;
-    width: 100%;
-    background-color: rgba(3, 3, 3, 0.055);
-}
-.p-btn{
-    display: none;
-    position: absolute;
-    top: 43% !important;
-    left: 47% !important;
-}
-.p-container .p-img{
-    height: 480px;
-    background-position: top;
-    transition: ease-in-out 5s;
-    background: url('../../../images/phono.png');
-    background-size: cover ;
-    overflow-x: hidden;
-    position: relative;    
 
-}
-.p-container .p-img:hover{
-    background-position: bottom !important;
-
-}
-.p-container .p-img:hover .p-details{
-    display: block;  
-}
-.p-container .p-img:hover .p-btn{
-    display: block; 
-}
-.p-container .p-img2{
-    height: 480px;
-    background-position: top;
-    transition: ease-in-out 4s;
-    background: url('../../../images/bikeballey.png') !important;
-    background-size: cover !important;
-    overflow-x: hidden;
-}
-.p-container .p-img2:hover{
-    background-position: bottom !important;
-}
 
 .custom-border {
     border: 1px solid #764abc !important;
