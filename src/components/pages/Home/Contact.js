@@ -1,13 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import sharif from '../../../images/sharif-pHero.jpg';
-import { Link } from 'react-router-dom';
-import resume from "../../../images/Md. Shariful Islam-Resume-2021.pdf";
-import Typewriter from 'typewriter-effect';
-import 'react-vertical-timeline-component/style.min.css';
-import { IoLocation } from "react-icons/io5";
-import { AiOutlineMail,AiTwotonePhone } from "react-icons/ai";
-import { FcCellPhone } from "react-icons/fc";
+import { AiOutlineMail} from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 
 const Contact = () => {
@@ -65,7 +58,10 @@ const Contact = () => {
     return (
         <div id='contact' style={{ overflowX: "hidden", paddingTop: "80px" }}>
             <div className="container">
-            <h3 className="text-center  mb-5"> <span className='rounded-pill bottom-border'>Get In Touch</span> </h3>
+            <div className='text-center'>
+                        <h1 className='text-back'>GET IN TOUCH</h1>
+                         <h3 style={{marginLeft:'-25px'}} className=""><span className='bottom-border text-lightest-slate'>CONTACT<span className='text-info'> ME</span></span></h3>
+                    </div>
                 <div className="row">
                     <div className="col-sm-12 mx-auto col-md-4 p-4">
                         <div style={{height:'9.5em'}} className='text-center py-3 bg-skill-back rounded font-custom'>
@@ -84,7 +80,7 @@ const Contact = () => {
                     </div>
                    
                    <div className='col-sm-12 mx-auto col-md-4 p-4 font-monospace'>
-                       <iframe  style={{height:'9.5em'}} className='w-100 rounded' title='location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.9014983311095!2d90.35699666490606!3d23.822101484554207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c13b96515cd1%3A0x1d3ec1947521d0e0!2sPallabi%20Extension%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1646801729099!5m2!1sen!2sbd"  allowfullscreen="" loading="lazy"></iframe>
+                       <iframe  style={{height:'9.5em'}} className='w-100 rounded' title='location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.9014983311095!2d90.35699666490606!3d23.822101484554207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c13b96515cd1%3A0x1d3ec1947521d0e0!2sPallabi%20Extension%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1646801729099!5m2!1sen!2sbd"  allowFullScreen="" loading="lazy"></iframe>
                     </div> 
 
                     <div className='my-5 row mx-auto'>
@@ -104,24 +100,22 @@ const Contact = () => {
                                 <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="sharif-rashed-623abb193" data-version="v1">
                                 </div>
                             </div> 
-                       
-                        
                         </div>
                     
                     <div className="col-sm-12 col-md-8 mx-auto">
                         <form className="p-4 text-lightest-slate font-custom" ref={form} onSubmit={sendEmail}>            
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Your Name<span className='text-danger'>*</span></label>
-                                <input type="text" className="form-control border-react bg-skill text-light-slate" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
+                                <input type="text" className="form-control border-react bg-transparent text-light " id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Email<span className='text-danger'>*</span></label>
-                                <input type="email" className="form-control border-react bg-skill" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
+                                <input type="email" className="form-control border-react bg-transparent text-light" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
                             </div>
                                 
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Message<span className='text-danger'>*</span></label>
-                                <textarea style={{height:'8em'}}  className="form-control border-react bg-skill text-light-slate" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required>
+                                <textarea style={{height:'8em'}}  className="form-control border-react bg-transparent text-light" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required>
                                 </textarea>
                             </div>
                             

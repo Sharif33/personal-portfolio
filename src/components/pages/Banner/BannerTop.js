@@ -3,13 +3,10 @@ import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import "./Banner.css";
 import profile from "../../../images/profile.jpg";
-// import resume from "../../../images/Md. Shariful Islam-Resume-2021.pdf";
 import Typewriter from 'typewriter-effect';
 import Flash from 'react-reveal/Flash';
 import Slide from 'react-reveal/Slide';
 import Rotate from 'react-reveal/Rotate';
-// import { Link } from 'react-router-dom';
-// import { HashLink } from 'react-router-hash-link';
 import { RiLinkedinLine,RiGithubLine,RiFacebookLine,RiInstagramLine,RiTelegramLine,RiYoutubeLine } 
 from "react-icons/ri";
 import { SiDiscord } from "react-icons/si";
@@ -108,15 +105,15 @@ const BannerTop = () => {
                         <form className="p-4 " ref={form} onSubmit={sendEmail}>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Your Name<span className='text-danger'>*</span></label>
-                                <input type="text" className="form-control border-css bg-skill" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
+                                <input type="text" className="form-control border-css bg-transparent text-light" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Email<span className='text-danger'>*</span></label>
-                                <input type="email" className="form-control border-css bg-skill" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
+                                <input type="email" className="form-control border-css bg-transparent text-light" id="exampleFormControlInput1" placeholder="xyz@example.com" name="to_email" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Message<span className='text-danger'>*</span></label>
-                                <textarea className="form-control border-css bg-skill text-light-slate" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required></textarea>
+                                <textarea className="form-control border-css bg-transparent text-light" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required></textarea>
                             </div>
                             <div className="mb-3 text-end">
                                     <input className="border-css my-btn bg-skill shadow text-sky py-2 rounded px-5" type="submit" value="Send" />

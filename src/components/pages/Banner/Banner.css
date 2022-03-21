@@ -79,6 +79,7 @@
     margin-right: -30px;
     transform: translateX(17%);
     border-radius: 15px !important;
+    /* filter: grayscale(10); */
 }
 
 .image-profile:hover{
@@ -137,8 +138,8 @@ transform: translateY(-10%);
 
 
 .bg-banner{
-    background-image: url('../../../images/aboutUs.png'),linear-gradient(
-        54deg,rgba(74, 76, 179, 0.822) 34%,rgba(0, 0, 0, 0.95));
+    /* background-image: url('../../../images/aboutUs.png'),linear-gradient(
+        54deg,rgba(74, 76, 179, 0.822) 34%,rgba(0, 0, 0, 0.95)); */
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;

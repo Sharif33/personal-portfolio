@@ -15,7 +15,10 @@ const Project = () => {
         <div id='projects'style={{ overflowX: 'hidden', paddingTop: "70px" }}>
             <div className="container">
                 <div className="p-2">
-                <h3 className="text-center"> <span className=' rounded-pill bottom-border'>Projects</span> </h3>
+                <div className='text-center'>
+                        <h1 className='text-back'>PROJRCTS</h1>
+                         <h3 className=""><span className='bottom-border text-lightest-slate'>MY<span className='text-info'> WORK</span></span></h3>
+                    </div>
                 </div>
                 <div className="row row-cols-1 row-cols-md-3 m-2 g-4">
                     {projects.length == 0 ?
