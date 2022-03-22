@@ -79,117 +79,14 @@ const Phono = () => {
                 </div>
                 </div>
 
-                <div className='my-5 p-3 rounded'>
-                    <div className='text-center'>
-                    <h3 className='text-light fw-bold'>Overview of   <span className='text-light'><span className='text-warning fw-bold'>PH</span><span className="text-danger fw-bold">|O|</span><span className="text-warning fw-bold">NO</span></span> Pages</h3>
-                    <small className='text-danger text-center'>*Keep hovering to full page view</small>
-                    </div>
-                    <hr className=' text-warning' />
-                    
-                 {/* Main Page */}
-             <div className="row p-phono">
-                 <h4 className="border-start text-warning fw-bold border-danger">Main Pages</h4>
-              <div className="col-md-4 p-2">
-                <div className="p-home rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow py-2 text-center">
-                    <h5 className="w-100">Home Page</h5>
-                  </div>
-            </div>
-              <div className="col-md-4 p-2">
-                <div className="p-shop rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow py-2 text-center">
-                    <h5 className="w-100">Shop Page</h5>
-                  </div>
-            </div>
-              <div className="col-md-4 p-2">
-                <div className="p-pdetails rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow py-2 text-center">
-                    <h5 className="w-100">Product Details Page</h5>
-                  </div>
-            </div>
-              <div className="col-md-4 p-2">
-                <div className="p-order rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow py-2 text-center">
-                    <h5 className="w-100">Product Order Modal</h5>
-                  </div>
-            </div>
-              <div className="col-md-4 p-2">
-                <div className="p-about rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">About Page</h5>
+                <div className='my-5 text-center'>
+                    <div >
+                <iframe className='ytb rounded' src="https://www.youtube.com/embed/1S8bNbuPJw4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
-            </div>
-              <div className="col-md-4 p-2">
-                <div className="p-contact rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">Contact Page</h5>
-                </div>
-            </div>
-            </div>
-
-            {/* Authentication & User */}
-
-             <div className="row p-phono">
-                 <div className='border-start border-danger my-4'>
-                 <h4 className=" text-warning fw-bold ">Authentication | User Dashboard | Payment</h4>
-                 </div>
-                 <div className="col-md-6 p-2">
-                <div className="p-login rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">Login Page</h5>
-                </div>
-            </div>
-            <div className="col-md-6 p-2">
-                <div className="p-myOrder rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">User's Order Page</h5>
-                </div>
-            </div>
-            <div className="col-md-6 p-2">
-                <div className="p-payment rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">Payment Page</h5>
-                </div>
-            </div>
-            </div>
-
-            {/* Admin Dashboard */}
-
-             <div className="row p-phono">
-                 <h4 className="border-start text-warning fw-bold border-danger my-4">Admin Dashboard</h4>
-                 <div className="col-md-6 p-2">
-                <div className="p-mngOrder rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">Manage Order Page</h5>
-                </div>
-            </div>
-            <div className="col-md-6 p-2">
-                <div className="p-mngProducts rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">Manage Products Page</h5>
-                </div>
-            </div>
-            <div className="col-md-6 p-2">
-                <div className="p-update rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">Update Products Page</h5>
-                </div>
-            </div>
-            <div className="col-md-6 p-2">
-                <div className="p-addProducts rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">Add Product Page</h5>
-                </div>
-            </div>
-            <div className="col-md-6 p-2">
-                <div className="p-makeAdmin rounded-top"></div>
-                <div style={{color:"#22c55e"}} className="bg-skill-back shadow p-2 text-center">
-                    <h5 className="w-100">Make Admin Page</h5>
-                </div>
-            </div>
-            </div>
                 </div>
 
+                <embed className='pjct rounded' src="https://phono-3a490.web.app/"></embed>
+                
              </div>
         </div>
     );

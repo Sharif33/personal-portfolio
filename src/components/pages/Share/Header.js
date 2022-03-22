@@ -35,7 +35,7 @@ const Header = () => {
                                 </li>
                                 <li className="nav-item">
                                     <NavHashLink smooth  className="nav-link active mx-1  " to="/home#contact">Contact</NavHashLink>
-                                    {/* style={({ isActive }) => ({ color: isActive ? '#64ffda' : 'white' }) */}
+                                    {/* style={({ isactive }) => ({ color: isactive ? '#64ffda' : 'white' }) */}
                                 </li>                               
                                 <li className="nav-item">
                                     <NavHashLink  className="nav-link active mx-1" to="/home#projects">Projects</NavHashLink>
@@ -56,5 +56,5 @@ const Header = () => {
     );
 };
 
-// style.={({ isActive }) => ({ color: isActive ? '#64ffda' : 'white' })}
+// style.={({ isactive }) => ({ color: isactive ? '#64ffda' : 'white' })}
 export default Header;

@@ -91,7 +91,7 @@ const BannerTop = () => {
                             <Rotate bottom right>
                                 <button data-bs-toggle="modal" data-bs-target="#exampleModal" className="px-5 py-2 bg-skill btn-lg border-css text-info my-btn "> Hire  Me</button></Rotate>
                             {/* modal */}
-                                <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 <div className="modal-content bg-modal">
                                     

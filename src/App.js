@@ -14,8 +14,6 @@ import logo from './images/rashed-logo.png';
 function App() {
   const [ spinner, setSpinner ] = React.useState(true);
 
-  // It will be executed before rendering
-
   React.useEffect(() => {
     setTimeout(() => setSpinner(false), 1500)
   }, []);

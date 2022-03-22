@@ -16,7 +16,7 @@ const Project = () => {
             <div className="container">
                 <div className="p-2">
                 <div className='text-center'>
-                        <h1 className='text-back'>PROJRCTS</h1>
+                        <h1 className='text-back'>PROJECTS</h1>
                          <h3 className=""><span className='bottom-border text-lightest-slate'>MY<span className='text-info'> WORK</span></span></h3>
                     </div>
                 </div>

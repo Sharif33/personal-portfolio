@@ -2,21 +2,23 @@ import React, { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { AiOutlineMail} from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
+import '../Banner/Banner.css';
+import '../AboutMe/Skill.css';
 
 const Contact = () => {
     // LinkedIn
 
     useEffect(() => {
-        const script = document.createElement('script');
+        const script2 = document.createElement('script');
     
-        script.src = 'http://platform.linkedin.com/badges/js/profile.js';
-        script.async = true;
-        script.defer = true;
+        script2.src = "http://platform.linkedin.com/badges/js/profile.js";
+        script2.async = true;
+        script2.defer = true;
     
-        document.body.appendChild(script);
+        document.body.appendChild(script2);
     
         return () => {
-          document.body.removeChild(script);
+          document.body.removeChild(script2);
         };
       }, []);
 
@@ -84,9 +86,9 @@ const Contact = () => {
                     </div> 
 
                     <div className='my-5 row mx-auto'>
-                        <div className='font-custom text-center text-light pb-2 '>
+                        {/* <div className='font-custom text-center text-light pb-2 '>
                             <small ><span className="border-bottom border-info fst-italic">Follow Me On Social Media</span></small>
-                        </div>
+                        </div> */}
                         <div className="col-sm-12 col-md-4">
                             {/* Github */}
                         
@@ -97,8 +99,7 @@ const Contact = () => {
                         {/* linkedIn */}
                         
                             <div  className='py-2 rounded w-100'>
-                                <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="sharif-rashed-623abb193" data-version="v1">
-                                </div>
+                            <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="sharif-rashed-623abb193" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/sharif-rashed-623abb193?trk=profile-badge"> </a></div>
                             </div> 
                         </div>
                     
@@ -106,16 +107,16 @@ const Contact = () => {
                         <form className="p-4 text-lightest-slate font-custom" ref={form} onSubmit={sendEmail}>            
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Your Name<span className='text-danger'>*</span></label>
-                                <input type="text" className="form-control border-react bg-transparent text-light " id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
+                                <input type="text" className="form-control border-css bg-transparent text-light " id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Email<span className='text-danger'>*</span></label>
-                                <input type="email" className="form-control border-react bg-transparent text-light" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
+                                <input type="email" className="form-control border-css bg-transparent text-light" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
                             </div>
                                 
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Message<span className='text-danger'>*</span></label>
-                                <textarea style={{height:'8em'}}  className="form-control border-react bg-transparent text-light" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required>
+                                <textarea style={{height:'8em'}}  className="form-control border-css bg-transparent text-light" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required>
                                 </textarea>
                             </div>
                             
