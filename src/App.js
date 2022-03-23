@@ -9,6 +9,7 @@ import Phono from "./components/pages/Project/Phono";
 import Project from "./components/pages/Project/Project";
 import SingleProject from "./components/pages/Project/SingleProject";
 import logo from './images/rashed-logo.png';
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   const [ spinner, setSpinner ] = React.useState(true);
@@ -22,7 +23,7 @@ function App() {
       !spinner && 
     <div className="App">
       <Router>
-        
+      <ScrollToTop smooth color="#112240" />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />

@@ -5,6 +5,7 @@ import resume from "../../../images/Md. Shariful Islam-Resume-2021.pdf";
 import { IoSchoolSharp, IoBulbSharp } from "react-icons/io5";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { HashLink } from 'react-router-hash-link';
 
 const About = () => {
     return (
@@ -23,10 +24,10 @@ const About = () => {
       <div className="col-md-5 font-custom m-auto">
         <h2 className='text-light font-custom fw-bold my-3'>Hi_</h2>
         <p className="align-custom text-lightest-slate">This is Sharif Mohammad Rashed. I am a <span className="text-sky"> Web Developer </span>, specialize in <span className="text-sky">Front-end</span> technologies like <span className="text-sky">JavaScript, React, HTML5, CSS3, Bootstrap5, Material UI</span> etc . I have also worked with <span className="text-sky">Backend</span> technologies like  <span className="text-sky"> Node JS, Express JS, MongoDB & Firebase</span> etc . <br /> <br /> I've always been someone who has both a creative and a logical side. I specialize in creating sites for <span className="text-sky"> individuals and small businesses</span> . My goal is to satisfy clients, try to understand what they want for their website, help them from beginning to the end of the project, and support them every time. <br /> <br />
-        Take a look at my portfolio below, if you think I'd be a good match for you send me an email.
+        Take a look at my <span><HashLink className="text-decoration-none text-info" to="/home#projects">portfolio</HashLink> </span>  below, if you think I'd be a good match for you <span><HashLink className="text-decoration-none text-info" to="/home#contact">send me an email</HashLink> </span> .
         </p>
 
-        <a className="text-decoration-none mb-5" href={resume} download={resume}> <button className="my-btn px-4 py-1 bg-skill rounded-pill border-css text-info my-3">Download Resume</button></a>
+        <a className="text-decoration-none mb-5" href={resume} download={resume}> <button className="my-btn px-4 py-1 bg-skill rounded-pill border-css text-sky my-3">Download Resume</button></a>
 
     </div>
 
