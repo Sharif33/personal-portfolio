@@ -16,7 +16,7 @@ const Footer = () => {
                         <a className="text-decoration-none " rel="noreferrer" target="_blank" href="https://t.me/Rashu33"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-telegram"></i></a>
                         <a className="text-decoration-none " rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCi_qzc-uH_Aei4aRd5Pr73w"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-youtube"></i></a>
                     </div> */}
-                    <p>Copyright <span>&copy;</span> {year} <span className="text-info font-custom">Sharif Mohammad Rashed</span> All rights reserved.</p>
+                    <p>Copyright <span>&copy;</span> {year} <span className="text-info font-custom">Sharif Mohammad Rashed</span> .</p>
                 </div>
             </footer>
         </div>

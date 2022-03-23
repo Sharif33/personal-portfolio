@@ -4,6 +4,7 @@ import About from "./components/pages/AboutMe/About";
 import Blogs from "./components/pages/Blogs/Blogs";
 import Contact from "./components/pages/Home/Contact";
 import Home from "./components/pages/Home/Home";
+import BikeValley from "./components/pages/Project/BikeValley/BikeValley";
 import Phono from "./components/pages/Project/Phono";
 import Project from "./components/pages/Project/Project";
 import SingleProject from "./components/pages/Project/SingleProject";
@@ -31,6 +32,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Project />} />
           <Route path="phono" element={<Phono/>} />
+          <Route path="bike" element={<BikeValley/>} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="projects/project/:id" element={<SingleProject />} />
           <Route path="home/project/:id" element={<SingleProject />} />

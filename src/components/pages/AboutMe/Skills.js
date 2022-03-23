@@ -26,7 +26,10 @@ const Skills = () => {
     return (
         <div>
             <div className="container my-5">
-            <h3 className="text-center text-light-slate mb-5 font-custom">MY  <span className='text-info'>SKILLS</span> </h3>
+            <div className='my-5'>
+                        {/* <h2 className='text-back'>OVERVIEW</h2> */}
+                         <h3 style={{fontSize:"30px"}} className="text-center fw-bold font-custom"><span className='text-lightest-slate'>MY <span className='text-info'>SKILLS</span></span></h3>
+                    </div>
                 <div className="row row-cols-1 row-cols-md-4 g-2">
                     <div className="col text-center skill px-2 my-2">
                         <img className='img-fluid rounded-circle border skill-margin' src={js} alt="" />

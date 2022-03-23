@@ -33,7 +33,7 @@ const BannerTop = () => {
         setResult(false)
     }, 5000);
     return (
-        <div style={{ overflowX: "hidden", paddingTop: "70px" }} className="bg-profile">
+        <div style={{ overflowX: "hidden",paddingTop:"70px" }} className="bg-profile">
             <div className="row p-4">
                 <div className="col-sm-12 col-md-4 text-center">
                     <div className="d-flex justify-content-between align-items-center">

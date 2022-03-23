@@ -9,8 +9,12 @@ import bike from '../../../images/bikeballey.png';
 const Projects = () => {
 
   return (
-    <div className="">
+    <div id='projects'style={{ overflowX: 'hidden', paddingTop: "70px" }}>
       <div className="container">
+      <div className='text-center mb-5'>
+                        <h1 className='text-back'>PROJECTS</h1>
+                         <h3 className=""><span className='bottom-border text-lightest-slate'>MY<span className='text-info'> WORK</span></span></h3>
+                    </div>
             <div className="row p-container">
               <div className="col-md-10 mx-auto col-sm-12 p-2">
                 <div className="d-md-flex justify-content-between align-items-center">
@@ -73,7 +77,7 @@ const Projects = () => {
 
                       <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href="https://bike-valley-sharif33.web.app"><RiExternalLinkLine title= "Live Demo" className="icon-hover" /></a>
                       
-                      <Link className="text-lightest-slate fs-3 ms-2" to="/phono" ><RiInformationLine title= "See Deatails"  className="icon-hover"/></Link>
+                      <Link className="text-lightest-slate fs-3 ms-2" to="/bike" ><RiInformationLine title= "See Deatails"  className="icon-hover"/></Link>
 
                     </div>
                   </div>

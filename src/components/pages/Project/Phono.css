@@ -47,7 +47,15 @@
       margin-left: -30px;
   }
 
+  .reviews{
+      position: fixed;
+  }
+
   @media only screen and (max-width: 768px) {
+      .reviews{
+          position: relative;
+          margin-bottom: 30px;
+      }
       .pjct{
           width: 100%;
           height: 130vw;
