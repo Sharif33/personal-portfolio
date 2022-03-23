@@ -7,6 +7,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { RiGithubLine, RiExternalLinkLine,RiGitBranchLine } from "react-icons/ri";
+import { HashLink } from "react-router-hash-link";
 
 const BikeValley = () => {
     const labels = {
@@ -45,7 +46,7 @@ const BikeValley = () => {
           });
       };
     return (
-        <div style={{ overflowX: "hidden", paddingTop: "70px"}}>
+        <div style={{ overflowX: "hidden", paddingTop: "20px"}}>
         <div className="container-fluid">
             {/* Details */}
 
@@ -56,6 +57,15 @@ const BikeValley = () => {
                    {/* Review */}
         
        <div className="col-md-2 border-end border-secondary reviews text-center">
+       <div>
+                    <nav aria-label="breadcrumb">
+                      <ol className="breadcrumb">
+                        <li className="breadcrumb-item"> <HashLink className="text-decoration-none" to="/home#home">Home</HashLink></li>
+                        <li className="breadcrumb-item"> <HashLink className="text-decoration-none" to="/home#projects">Project</HashLink></li>
+                        <li className="breadcrumb-item active" aria-current="page">bike-valley</li>
+                      </ol>
+                    </nav>
+                </div>
 
         <div className='mt-2 mb-3 text-center'>
         <h3 className='text-lightest-slate'><span className="text-warning fs-4">Bike</span> <span>Valley</span></h3>
@@ -141,7 +151,11 @@ const BikeValley = () => {
        </form>
                }
        </div>
-           <div className="col-md-9 mx-5 ms-auto">                 
+           <div className="col-md-9 mx-5 ms-auto">
+           <div className='mb-5'>
+                   {/* <h2 className='text-back'>OVERVIEW</h2> */}
+                    <h3 style={{fontSize:"30px"}} className="text-center fw-bold font-custom"><span className='text-lightest-slate'>FEATURES  <span className="text-warning">&</span> <span className='text-info'> TECH</span></span></h3>
+               </div>                 
                <div className="row"> 
                
                    <div className="col-md-6 wrapper">
@@ -201,7 +215,7 @@ const BikeValley = () => {
        <div >
        <div className='mt-5 mb-3'>
                    {/* <h2 className='text-back'>OVERVIEW</h2> */}
-                    <h3 style={{fontSize:"30px"}} className="text-center fw-bold font-custom"><span className='text-lightest-slate'>PROJECT OVERVIEW <span className='text-info'>VIDEO</span></span></h3>
+                    <h3 style={{fontSize:"30px"}} className="text-center fw-bold font-custom"><span className='text-lightest-slate'>PROJECT  OVERVIEW <span className='text-info'>  VIDEO</span></span></h3>
                </div>
            <iframe className='ytb rounded' src="https://www.youtube.com/embed/1S8bNbuPJw4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
            </div>

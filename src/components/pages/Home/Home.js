@@ -6,11 +6,14 @@ import Contact from '../Home/Contact';
 import ParticlesComponent from '../Share/ParticlesComponent';
 import Projects from '../Project/Projects';
 import Skills from '../AboutMe/Skills';
+import Header from '../Share/Header';
+import Footer from '../Share/Footer';
 
 
 const Home = () => {
     return (
         <div id='home' style={{overflowX:"hidden"}}>
+            <Header></Header>
             <ParticlesComponent></ParticlesComponent>
             <BannerTop></BannerTop>
             <About></About>
@@ -18,6 +21,7 @@ const Home = () => {
             {/* <Project></Project> */}
             <Projects/>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

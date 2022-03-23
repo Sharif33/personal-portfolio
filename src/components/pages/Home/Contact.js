@@ -1,43 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { AiOutlineMail} from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import '../Banner/Banner.css';
 import '../AboutMe/Skill.css';
 
+
 const Contact = () => {
-    // LinkedIn
-
-    useEffect(() => {
-        const script2 = document.createElement('script');
     
-        script2.src = "http://platform.linkedin.com/badges/js/profile.js";
-        script2.async = true;
-        script2.defer = true;
-    
-        document.body.appendChild(script2);
-    
-        return () => {
-          document.body.removeChild(script2);
-        };
-      }, []);
-
-    // Github
-
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = '//cdn.jsdelivr.net/github-cards/latest/widget.js';
-        script.async = true;
-        script.defer = true;
-    
-        document.body.appendChild(script);
-    
-        return () => {
-          document.body.removeChild(script);
-        };
-      }, []);
-
-
     // Emailjs form
     const form = useRef();
     const [result, setResult] = useState(false);
@@ -89,25 +59,12 @@ const Contact = () => {
                         {/* <div className='font-custom text-center text-light pb-2 '>
                             <small ><span className="border-bottom border-info fst-italic">Follow Me On Social Media</span></small>
                         </div> */}
-                        <div className="col-sm-12 col-md-4">
-                            {/* Github */}
-                        
-                            <div  className='py-2 rounded'>
-                                <div className="github-card" data-github="Sharif33" data-width="350" data-height="" data-theme="default">
-                                </div>   
-                            </div>
-                        {/* linkedIn */}
-                        
-                            <div  className='py-2 rounded w-100'>
-                            <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="sharif-rashed-623abb193" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/sharif-rashed-623abb193?trk=profile-badge"> </a></div>
-                            </div> 
-                        </div>
                     
                     <div className="col-sm-12 col-md-8 mx-auto">
                         <form className="p-4 text-lightest-slate font-custom" ref={form} onSubmit={sendEmail}>            
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Your Name<span className='text-danger'>*</span></label>
-                                <input type="text" className="form-control border-css bg-transparent text-light " id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
+                                <input type="text" className="form-control border-css bg-transparent text-light" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Email<span className='text-danger'>*</span></label>

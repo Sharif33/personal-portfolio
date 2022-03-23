@@ -1,22 +1,86 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Footer = () => {
     const year = new Date ().getFullYear();
+
+    // Youtube
+
+    useEffect(() => {
+        const script2 = document.createElement('script');
+    
+        script2.src = `https://apis.google.com/js/platform.js`;
+        script2.async = true;
+        script2.defer = true;
+    
+        document.body.appendChild(script2);
+    
+        return () => {
+          document.body.removeChild(script2);
+        };
+      }, []);
+
+    // Github
+
+    // useEffect(() => {
+    //     const script = document.createElement('script');
+    //     script.src = '//cdn.jsdelivr.net/github-cards/latest/widget.js';
+    //     script.async = true;
+    //     script.defer = true;
+    
+    //     document.body.appendChild(script);
+    
+    //     return () => {
+    //       document.body.removeChild(script);
+    //     };
+    //   }, []);
+    useEffect(() => {
+       
+        const script = document.createElement('script');
+        script.src = 'https://buttons.github.io/buttons.js';
+        script.async = true;
+        script.defer = true;
+    
+        document.body.appendChild(script);
+    
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []);
+
+
+
     return (
         <div>
-            <footer>
+            <footer className='bg-skill-back'>
                 <div className="text-light-slate text-center p-3">
-                    {/* <h5 className="px-2 text-light">Follow Me : </h5>
-                    <div className='d-flex justify-content-center'>
-                        <a className="text-decoration-none " rel="noreferrer" target="_blank" href="https://github.com/Sharif33"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-github"></i></a>
-                        <a className="text-decoration-none " rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/sharif-rashed-623abb193/"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-linkedin"></i></a>
-                        <a className="text-decoration-none " rel="noreferrer" target="_blank" href="https://www.facebook.com/sharif.rashed01/"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-facebook"></i></a>
-                        <a className="text-decoration-none " rel="noreferrer" target="_blank" href="https://www.instagram.com/rashu_33/"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-instagram"></i></a>
-                        <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://discord.com/channels/926693183734304769/926693184279547916"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-discord"></i></a>
-                        <a className="text-decoration-none " rel="noreferrer" target="_blank" href="https://t.me/Rashu33"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-telegram"></i></a>
-                        <a className="text-decoration-none " rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCi_qzc-uH_Aei4aRd5Pr73w"><i className="px-2 fs-4 my-2 icon-hover text-light fab fa-youtube"></i></a>
-                    </div> */}
-                    <p>Copyright <span>&copy;</span> {year} <span className="text-info font-custom">Sharif Mohammad Rashed</span> .</p>
+
+                    <div className='d-flex justify-content-center align-item-center'>
+                            {/* Github */}
+
+                                {/* <div className="github-card" data-github="Sharif33" data-width="350" data-height="" data-theme="default">
+                                </div>    */}
+                        <div className='m-3 text-center'>
+                            <a className="github-button" 
+                            href="https://github.com/Sharif33" data-size="large" data-show-count="true" 
+                            aria-label="Follow @Sharif33 on GitHub">Follow @Sharif33
+                            </a>
+                        </div>
+                        {/* Youtube */}
+
+                        <div className='m-3  text-center'>
+                            <div className="g-ytsubscribe" 
+                                data-channelid="UCi_qzc-uH_Aei4aRd5Pr73w" 
+                                data-layout="default" 
+                                data-count="default">                                
+                            </div> 
+                        </div>
+                        
+                    </div>
+
+                    <div>
+                        <p>Copyright <span>&copy;</span> {year} <span className="text-info font-custom">Sharif Mohammad Rashed</span> .</p>
+                    </div>
+                    
                 </div>
             </footer>
         </div>

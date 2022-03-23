@@ -8,8 +8,6 @@ import BikeValley from "./components/pages/Project/BikeValley/BikeValley";
 import Phono from "./components/pages/Project/Phono";
 import Project from "./components/pages/Project/Project";
 import SingleProject from "./components/pages/Project/SingleProject";
-import Footer from "./components/pages/Share/Footer";
-import Header from "./components/pages/Share/Header";
 import logo from './images/rashed-logo.png';
 
 function App() {
@@ -24,7 +22,7 @@ function App() {
       !spinner && 
     <div className="App">
       <Router>
-        <Header></Header>
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />
@@ -38,7 +36,7 @@ function App() {
           <Route path="home/project/:id" element={<SingleProject />} />
           <Route path="/project/:id" element={<SingleProject />} />
         </Routes>
-        <Footer></Footer>
+        
       </Router>
     </div>
     }
