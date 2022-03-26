@@ -10,6 +10,11 @@ import Project from "./components/pages/Project/Project";
 import SingleProject from "./components/pages/Project/SingleProject";
 import logo from './images/rashed-logo.png';
 import ScrollToTop from "react-scroll-to-top";
+import Dashboard from "./components/pages/Dashboard/Dashboard";
+import DashboardHome from "./components/pages/Dashboard/DashboardHome";
+import AddProjects from "./components/pages/Dashboard/AddProjects";
+import EditProjects from "./components/pages/Dashboard/EditProjects";
+import ManageProjects from "./components/pages/Dashboard/ManageProjects";
 
 function App() {
   const [ spinner, setSpinner ] = React.useState(true);
@@ -36,6 +41,14 @@ function App() {
           <Route path="projects/project/:id" element={<SingleProject />} />
           <Route path="home/project/:id" element={<SingleProject />} />
           <Route path="/project/:id" element={<SingleProject />} />
+
+          <Route path="Sdashboard" element={<Dashboard />}>
+              <Route index element={<DashboardHome/>}/>
+              <Route path={`/Sdashboard/addProject`} element={<AddProjects/>}/>
+              <Route path={`/Sdashboard/manageProjects/:id`} element={<EditProjects/>}/>
+              <Route path={`/Sdashboard/manageProjects`} element={<ManageProjects/>}/>
+            </Route>
+
         </Routes>
         
       </Router>

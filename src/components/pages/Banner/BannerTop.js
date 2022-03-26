@@ -33,9 +33,9 @@ const BannerTop = () => {
         setResult(false)
     }, 5000);
     return (
-        <div style={{ overflowX: "hidden",paddingTop:"70px" }} className="bg-profile">
-            <div className="row p-4">
-                <div className="col-sm-12 col-md-4 text-center">
+        <div style={{ overflowX: "hidden",paddingTop:"70px" }} className="bg-profile my-5">
+            <div className="row">
+                <div className="col-sm-12 col-md-4 m-auto">
                     <div className="d-flex justify-content-between align-items-center">
                         <div>
                             <Flash>
@@ -44,7 +44,7 @@ const BannerTop = () => {
                             </Flash>
 
                         </div>
-                        <span className='border-profile'></span>
+                        {/* <span className='border-profile'></span> */}
                         <Slide left>
                             <div className="p-2 bg-transparent rounded-end icons">
                                 <a className="text-decoration-none d-block" rel="noreferrer" target="_blank" href="https://github.com/Sharif33"><RiGithubLine className="  icon-hover"/></a>
@@ -59,8 +59,8 @@ const BannerTop = () => {
                         </Slide>
                     </div>
                 </div>
-                <div className="col-sm-12 col-md-8 ">
-                    <div className="p-4 pt-5 margin-right">
+                <div className="col-sm-12 col-md-8 m-auto">
+                    <div className="p-4 margin-right">
                         <div>
                             <Slide right>
                                 <h6 className="font-monospace text-info">Hello, my name is</h6>

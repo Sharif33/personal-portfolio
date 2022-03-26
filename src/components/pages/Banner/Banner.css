@@ -94,8 +94,8 @@
 .vertical-line{
     display: inline-block;
     border-left: 1px solid #ccc;
-    margin: 0 10px;
-    height: 125px;
+    margin: 0 16px;
+    height: 180px;
 }
 .vertical-line-contact{
     display: inline-block;

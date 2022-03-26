@@ -4,6 +4,7 @@ import { AiOutlineMail} from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import '../Banner/Banner.css';
 import '../AboutMe/Skill.css';
+import { HashLink } from 'react-router-hash-link';
 
 
 const Contact = () => {
@@ -39,7 +40,7 @@ const Contact = () => {
                         <div style={{height:'9.5em'}} className='text-center py-3 bg-skill-back rounded font-custom'>
                                 <AiOutlineMail className='fs-1 text-purple rounded-circle bg-light p-1 custom-border'/>
                                 <p className='text-sky py-2'>Email</p>
-                                <a className="text-decoration-none text-light-slate" href="mailto:md.shariful.islam2511@gmail.com">md.shariful.islam2511@gmail.com</a>
+                                <a className="text-decoration-none text-lightest-slate" href="mailto:md.shariful.islam2511@gmail.com">md.shariful.islam2511@gmail.com</a>
                         </div>
                     </div>
                     
@@ -47,7 +48,7 @@ const Contact = () => {
                          <div style={{height:'9.5em'}} className='bg-skill-back text-center py-3 rounded font-custom'>
                             <HiLocationMarker className='text-purple fs-1 rounded-circle bg-light p-1 custom-border'/>
                             <p className='text-sky py-2'>Address</p>
-                            <p className="text-light-slate">Pallabi, Mirpur, Dhaka, Bangladesh</p>
+                            <p className="text-lightest-slate">Pallabi, Mirpur, Dhaka, Bangladesh</p>
                         </div>
                     </div>
                    
@@ -61,24 +62,27 @@ const Contact = () => {
                         </div> */}
                     
                     <div className="col-sm-12 col-md-8 mx-auto">
+                        <div>
+                            <h6 className='text-lightest-slate text-center font-custom mb-3'> <span className='fs-1 fw-bold lh-lg text-slate'>Any Suggestion for me?</span> <br /> <small className='text-sky'>or</small> Have an exciting project where you need some help? <br /> Send me over a message, and let's chat.</h6>
+                        </div>
                         <form className="p-4 text-lightest-slate font-custom" ref={form} onSubmit={sendEmail}>            
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Your Name<span className='text-danger'>*</span></label>
-                                <input type="text" className="form-control border-css bg-transparent text-light" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
+                                <input type="text" className="form-control  bg-skill-back border-0  text-light p-2" id="exampleFormControlInput1" placeholder="Enter your name" name="full_name" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Email<span className='text-danger'>*</span></label>
-                                <input type="email" className="form-control border-css bg-transparent text-light" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
+                                <input type="email" className="form-control  bg-skill-back border-0  text-light p-2" id="exampleFormControlInput1" placeholder="Enter your email" name="to_email" required />
                             </div>
                                 
                             <div className="mb-3">
                                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Message<span className='text-danger'>*</span></label>
-                                <textarea style={{height:'8em'}}  className="form-control border-css bg-transparent text-light" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required>
+                                <textarea style={{height:'10em'}}  className="form-control  bg-skill-back border-0  text-light" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Write your valuable message..." required>
                                 </textarea>
                             </div>
                             
                             <div className="mb-3 text-end p-2">
-                                <input className="border-css my-btn bg-skill shadow text-sky py-2 rounded px-5" type="submit" value="Send" />
+                                <button className="px-5 py-2 bg-skill-back btn-lg border-0 text-info my-btn" type="submit" value="Send">Send </button>
                             </div>    
                            
                         </form>

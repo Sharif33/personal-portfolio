@@ -1,0 +1,41 @@
+"imageweb2": "https://i.ibb.co/b6g7CS8/bv-bikes1.png",
+        "imageweb3": "https://i.ibb.co/Y2G7HZV/bv-singlebike.png",
+        "imageweb4": "https://i.ibb.co/5Bv5JLm/bv-login.png",
+        "imageweb5": "https://i.ibb.co/LSm25MN/bv-register.png",
+        "imageweb6": "https://i.ibb.co/Jz520jY/bv-ap.png",
+        "imageweb7": "https://i.ibb.co/SsQSmmh/bv-dashboard.png",
+        "imageweb8": "https://i.ibb.co/dPw8Tpk/bv-mp.png",
+        "imageweb9": "https://i.ibb.co/WWbVs1h/bv-ao.png",
+        "imageweb10": "https://i.ibb.co/5KLrTpG/all-devices-black.png"
+
+        "imageweb2": "https://i.ibb.co/LC58DZh/ht-resorts.png",
+        "imageweb3": "https://i.ibb.co/Sx8H95D/ht-login.png",
+        "imageweb4": "https://i.ibb.co/Dk1q3xT/ht-mo.png",
+        "imageweb5": "https://i.ibb.co/vx9DSM3/ht-mao.png",
+        "imageweb6": "https://i.ibb.co/G230GG0/ht-ar.png",
+        "imageweb7": "https://i.ibb.co/3mdYQXQ/all-devices-black-1.png",
+        "imageweb8": "https://i.ibb.co/2Kqv004/ht-contact.png",
+        "imageweb9": "https://i.ibb.co/Bc52dMJ/ht-about.png",
+        "imageweb10": "https://i.ibb.co/1mWdHDp/holidaytravel-home.png"
+
+         "imageweb2": "https://i.ibb.co/0FgmmY8/pc-doctors1.png",
+        "imageweb3": "https://i.ibb.co/DW82RRb/pc-single-Doctor11.png",
+        "imageweb4": "https://i.ibb.co/KyCr2qh/pc-medicine2.png",
+        "imageweb5": "https://i.ibb.co/p3FDNGn/pc-single-Medicine22.png",
+        "imageweb6": "https://i.ibb.co/nsPJwkh/pc-login.png",
+        "imageweb7": "https://i.ibb.co/L5v0pnY/pc-students.png",
+        "imageweb8": "https://i.ibb.co/1981sKk/pc-contact.png",
+        "imageweb9": "https://i.ibb.co/wgqX4zX/pc-about.png",
+        "imageweb10": "https://i.ibb.co/Sd1tf3w/pharma-Care-home.png"
+
+        "imageweb2": "https://i.ibb.co/b6g7CS8/bv-bikes1.png",
+        "imageweb3": "https://i.ibb.co/Y2G7HZV/bv-singlebike.png",
+        "imageweb4": "https://i.ibb.co/5Bv5JLm/bv-login.png",
+        "imageweb5": "https://i.ibb.co/LSm25MN/bv-register.png",
+        "imageweb6": "https://i.ibb.co/Jz520jY/bv-ap.png",
+        "imageweb7": "https://i.ibb.co/SsQSmmh/bv-dashboard.png",
+        "imageweb8": "https://i.ibb.co/dPw8Tpk/bv-mp.png",
+        "imageweb9": "https://i.ibb.co/WWbVs1h/bv-ao.png",
+        "imageweb10": "https://i.ibb.co/5KLrTpG/all-devices-black.png"
+
+        "img": "https://i.ibb.co/Sd1tf3w/pharma-Care-home.png"

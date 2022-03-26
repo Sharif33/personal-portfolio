@@ -6,7 +6,7 @@ const Project = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch(`https://raw.githubusercontent.com/Sharif33/personal-portfolio/main/public/myprojects.json`)
+        fetch(`https://sharif-rashed.herokuapp.com/projects`)
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
@@ -29,8 +29,8 @@ const Project = () => {
                             </button>
                         </div>
                         :
-                        projects.slice(0, 3).map(project => <ProjectDetails
-                            key={project.id}
+                        projects.map(project => <ProjectDetails
+                            key={project._id}
                             project={project}
                         >
                         </ProjectDetails>)

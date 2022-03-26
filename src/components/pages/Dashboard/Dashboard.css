@@ -1,0 +1,57 @@
+.custom-input-add {
+    border-radius: 15px !important;
+    margin-bottom: 12px;
+    border: 1px solid #764abc !important;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .custom-input-add:focus {
+    outline: 1px solid #764abc !important;
+    box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%),
+      0 7px 12px -5px rgb(156 39 176 / 46%) !important;
+    transition: 0.5s ease;
+  }
+
+  .custom-form-add p{
+      margin-bottom: 12px;
+      width: 25%;
+      border: 1px solid #764abc !important;
+      text-align: center;
+      padding: 10px;
+  }
+  
+  .custom-form-add input {
+    
+    margin-bottom: 12px;
+    border: 1px solid #764abc !important;
+    padding: 10px;
+    width: 100%;
+  }
+  .custom-form-add textarea {
+    
+    margin-bottom: 12px;
+    border: 1px solid #764abc !important;
+    padding: 10px;
+    width: 100%;
+  }
+  .custom-form-add select {
+    
+    margin-bottom: 12px;
+    border: 1px solid #764abc !important;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .custom-form-add input:focus {
+    outline: 1px solid #764abc !important;
+    box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%),
+      0 7px 12px -5px rgb(156 39 176 / 46%) !important;
+    transition: 0.5s ease;
+  }
+  .custom-form-add textarea:focus {
+    outline: 1px solid #764abc !important;
+    box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%),
+      0 7px 12px -5px rgb(156 39 176 / 46%) !important;
+    transition: 0.5s ease;
+  }
