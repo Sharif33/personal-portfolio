@@ -30,7 +30,7 @@ const Skills = () => {
                         {/* <h2 className='text-back'>OVERVIEW</h2> */}
                          <h3 style={{fontSize:"30px"}} className="text-center fw-bold font-custom"><span className='text-lightest-slate'>MY <span className='text-info'>SKILLS</span></span></h3>
                     </div>
-                <div className="row row-cols-1 row-cols-md-4 g-2">
+                <div className="row row-cols-1 row-cols-md-3 g-2">
                     <div className="col text-center skill px-2 my-2">
                         <img className='img-fluid rounded-circle border skill-margin' src={js} alt="" />
 
@@ -174,10 +174,10 @@ const Skills = () => {
                             </div>
                         </div>
                         <div className='p-3'>
-                            <div className='d-flex justify-content-center border-js align-item-center text-center bg-skill'>
-                                <img className='img-fluid img-width' src={chrome} alt="" />
+                        <div className='d-flex justify-content-center border-mui align-item-center text-center bg-skill-2'>
+                                <img className='img-fluid img-width' src={github} alt="" />
                                 <button className='btn w-75'>
-                                    <ProgressBar labelColor={'black'} bgColor={'#F4E11E'} animateOnRender={true} height={'12px'} labelSize={'10px'} completed={80} maxCompleted={100} />
+                                    <ProgressBar labelColor={'black'} bgColor={'#DBDBDB'} baseBgColor={'gray'} animateOnRender={true} height={'12px'} labelSize={'10px'} completed={80} maxCompleted={100} />
                                 </button>
                                 
                             </div>
@@ -185,7 +185,7 @@ const Skills = () => {
                         </div>
                         
                     </div>
-                    <div className="col text-center skill px-2 my-2">
+                    {/* <div className="col text-center skill px-2 my-2">
                         <img className='img-fluid rounded-circle border skill-margin-heroku' src={heroku} alt="" />
 
                         <div className='bg-skill-back rounded pt-5'>
@@ -208,19 +208,13 @@ const Skills = () => {
                             </div>
                         </div>
                         <div className='p-3'>
-                            <div className='d-flex justify-content-center border-mui align-item-center text-center bg-skill-2'>
-                                <img className='img-fluid img-width' src={github} alt="" />
-                                <button className='btn w-75'>
-                                    <ProgressBar labelColor={'black'} bgColor={'#DBDBDB'} baseBgColor={'gray'} animateOnRender={true} height={'12px'} labelSize={'10px'} completed={80} maxCompleted={100} />
-                                </button>
-                                
-                            </div>
+                            
                         </div> 
                         <div className='p-3'>
-                            <div className='d-flex justify-content-center border-html align-item-center text-center bg-skill'>
-                                <img className='img-fluid img-width' src={git} alt="" />
+                            <div className='d-flex justify-content-center border-js align-item-center text-center bg-skill'>
+                                <img className='img-fluid img-width' src={chrome} alt="" />
                                 <button className='btn w-75'>
-                                    <ProgressBar labelColor={'white'} bgColor={'#E44D26'} animateOnRender={true} height={'12px'} labelSize={'10px'} completed={80} maxCompleted={100} />
+                                    <ProgressBar labelColor={'black'} bgColor={'#F4E11E'} animateOnRender={true} height={'12px'} labelSize={'10px'} completed={80} maxCompleted={100} />
                                 </button>
                                 
                             </div>
@@ -236,7 +230,7 @@ const Skills = () => {
                         </div> 
                         </div>
                         
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

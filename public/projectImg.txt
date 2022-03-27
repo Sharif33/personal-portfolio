@@ -39,3 +39,70 @@
         "imageweb10": "https://i.ibb.co/5KLrTpG/all-devices-black.png"
 
         "img": "https://i.ibb.co/Sd1tf3w/pharma-Care-home.png"
+
+        ///slider use start///
+         {/*   // <div className="bg-dark" style={{ overflowX: "hidden", paddingTop: "70px" }}>
+        //     <h2 className="text-warning p-3 text-center"><span className="text-light">Project : </span>{projectDetails?.name}</h2>
+        //     <div className="container">
+        //         <div className="row py-2 my-2">
+        //             <div className="col-sm-12 col-md-6 p-3 bg-info">
+        //                 <ul>
+        //                     <h4 className="text-success"> Technology Used :</h4>
+        //                     <li>{projectDetails?.tech}</li>
+        //                 </ul>
+        //                 <ul>
+        //                     <h4 className="text-primary"> Key Features :</h4>
+        //                     <li>{projectDetails?.feature}</li>
+        //                 </ul>
+        //             </div>
+        //             <div className="col-sm-12 col-md-6 bg-warning p-3">
+        //                 <ul>
+        //                     <h4 className="text-primary">About :</h4>
+        //                     <li>{projectDetails?.details}</li>
+        //                 </ul>
+        //                 <div className="d-flex justify-content-between">
+        //                     <a className="text-decoration-none px-2" rel="noreferrer" target="_blank" href={projectDetails?.github}><button className="btn btn-danger">Source Code</button></a>
+
+        //                     <a className="text-decoration-none px-2" rel="noreferrer" target="_blank" href={projectDetails?.github}><button className="btn btn-danger">Server Site Code</button></a>
+        //                 </div>
+        //             </div>
+
+        //         </div>
+        //         <div className="py-3 my-4">
+        //             <div className="row row-cols-2 row-cols-md-2 p-3 m-2">
+        //                 <Slide left>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb1} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide right>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb2} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide left>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb3} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide right>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb4} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide left>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb5} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide right>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb6} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide left>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb7} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide right>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb8} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide left>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb9} alt="" /></div>
+        //                 </Slide>
+        //                 <Slide right>
+        //                     <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb10} alt="" /></div>
+        //                 </Slide>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </div> */}
+
+        //slider use end//

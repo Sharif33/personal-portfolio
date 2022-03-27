@@ -1,7 +1,7 @@
 import React from 'react';
 import About from '../AboutMe/About';
 import BannerTop from '../Banner/BannerTop';
-// import Project from '../Project/Project';
+import Project from '../Project/Project';
 import Contact from '../Home/Contact';
 import ParticlesComponent from '../Share/ParticlesComponent';
 import Projects from '../Project/Projects';
@@ -18,8 +18,8 @@ const Home = () => {
             <BannerTop></BannerTop>
             <About></About>
             <Skills></Skills>
-            {/* <Project></Project> */}
             <Projects/>
+            <Project></Project>
             <Contact></Contact>
             <Footer></Footer>
         </div>

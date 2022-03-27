@@ -6,12 +6,8 @@
         "tech": "React JS, React Router dom, React hook form, Axios, Material UI, Bootsrap5, CSS3, Heroku,Firebase,Node.js,Express.js,MongoDB.",
         "gitC": "https://github.com/Sharif33/BikeValley",
         "gitS": "https://github.com/Sharif33/BikeValley-server",
+        "gitStar": "Star Sharif33/BikeValley on GitHub",
         "web": "https://bike-valley-sharif33.web.app/",
-        "ftr1": "Full-Stack web application including customize admin panel.",
-        "ftr2": "An Admin can make another admin, can manage all products (add and delete products) , can manage all orders (delete and update orders).",
-        "ftr3": "Users can sign in / sign up using a Google Account in addition to their email and password. After signin users see their Dashboard.",
-        "ftr4": "Users can order bikes, manage their orders and can give reviews any bikes.",
-        "ftr5": "Responsived for Mobile and large device.",
         "shortDesc": "MERN-Stack web application including customize admin panel. Used MongoDB for databse and Node Js & Express Js for backend. Firebase used for login system and Material UI & Bootstrap5 for styles.",
         "img": "https://i.ibb.co/bQT23G2/bikevalley-home.png"
     },
@@ -22,13 +18,8 @@
         "tech": "React JS, React Router dom, React hook form, Axios, Material UI, Bootsrap5, CSS3, Heroku,Firebase,Node.js,Express.js,MongoDB.",
         "gitC": "https://github.com/Sharif33/HolidayTravel",
         "gitS": "https://github.com/Sharif33/HolidayTravel-server",
+        "gitStar": "Star Sharif33/HolidayTravel on GitHub",
         "web": "https://holiday-travel-sharif33.web.app/",
-        "feature": "Full-Stack web application based on MERN. Users can SignIn/SignUp by their Google Account. Responsived for mobile and large devices.",
-        "ftr1": "Full-Stack web application based on MERN.",
-        "ftr2": "Users can sign in / sign up using a Google Account.",
-        "ftr3": "After signin Users can see details of resort, book resort, manage their booking resorts and add their favorite resort.",
-        "ftr4": "User can cancel booking and rechoice their resort.",
-        "ftr5": "Responsived for Mobile and large device.",
         "shortDesc": "MERN-Stack web application including customize admin panel. Used MongoDB for databse and Node Js & Express Js for backend. Firebase used for login system and Bootstrap5 for styles.",
         "img": "https://i.ibb.co/1mWdHDp/holidaytravel-home.png"
         

@@ -80,14 +80,10 @@ const EditProjects = () => {
                 <input {...register("tech")} defaultValue={projects?.tech} />
                 <input {...register("gitC")} defaultValue={projects?.gitC} />
                 <input {...register("gitS")} defaultValue={projects?.gitS} />
-                <input {...register("web")} defaultValue={projects?.web} /> 
                     </div>
                     <div className="col-md-6">
-                        <input {...register("f1")} defaultValue={projects?.f1} />
-                <input {...register("f2")} defaultValue={projects?.f2} />
-                <input {...register("f3")} defaultValue={projects?.f3} />
-                <input {...register("f4")} defaultValue={projects?.f4} />
-                <input {...register("f5")} defaultValue={projects?.f5} />
+                        <input {...register("gitStar")} defaultValue={projects?.gitStar} />
+                <input {...register("web")} defaultValue={projects?.web} /> 
                 <textarea style={{height:'10.5em'}} {...register("shortDesc", { required: true, maxLength: 500 })} defaultValue={projects?.shortDesc} />
                 <input className="btn btn-primary" type="submit" />
                     </div>

@@ -1,85 +1,93 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
-import "./SingleProjects.css";
-import Slide from 'react-reveal/Slide';
+import { RiGithubLine, RiGitBranchLine, RiExternalLinkLine,RiCloseLine } from "react-icons/ri";
+import Modal from "@mui/material/Modal";
+import { useEffect } from "react";
 
-const SingleProject = () => {
-    const { id } = useParams();
+/* const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 900,
+  height:500,
+  bgcolor: "background.paper",
+  borderRadius: "10px",
+  boxShadow: 24,
+  p: 4,
+}; */
 
-    const [projects, setProjets] = useState([]);
+const SingleProject = ({ project, openProject, handleClose }) => {
 
-    useEffect(() => {
-        fetch(`https://raw.githubusercontent.com/Sharif33/personal-portfolio/main/public/myprojects.json`)
-            .then(res => res.json())
-            .then(data => setProjets(data))
-    }, [id])
+  useEffect(() => {
+       
+    const script = document.createElement('script');
+    script.src = 'https://buttons.github.io/buttons.js';
+    script.async = true;
+    script.defer = true;
 
-    const projectDetails = projects.find(project => project.id == id)
-    return (
-        <div className="bg-dark" style={{ overflowX: "hidden", paddingTop: "70px" }}>
-            <h2 className="text-warning p-3 text-center"><span className="text-light">Project : </span>{projectDetails?.name}</h2>
-            <div className="container">
-                <div className="row py-2 my-2">
-                    <div className="col-sm-12 col-md-6 p-3 bg-info">
-                        <ul>
-                            <h4 className="text-success"> Technology Used :</h4>
-                            <li>{projectDetails?.tech}</li>
-                        </ul>
-                        <ul>
-                            <h4 className="text-primary"> Key Features :</h4>
-                            <li>{projectDetails?.feature}</li>
-                        </ul>
-                    </div>
-                    <div className="col-sm-12 col-md-6 bg-warning p-3">
-                        <ul>
-                            <h4 className="text-primary">About :</h4>
-                            <li>{projectDetails?.details}</li>
-                        </ul>
-                        <div className="d-flex justify-content-between">
-                            <a className="text-decoration-none px-2" rel="noreferrer" target="_blank" href={projectDetails?.github}><button className="btn btn-danger">Source Code</button></a>
+    document.body.appendChild(script);
 
-                            <a className="text-decoration-none px-2" rel="noreferrer" target="_blank" href={projectDetails?.github}><button className="btn btn-danger">Server Site Code</button></a>
-                        </div>
-                    </div>
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
+  return (
+    <>
+
+      <Modal
+        open={openProject}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+      <div className="projectModal rounded">
+            <div className="row">
+              <div className="col-md-6 m-auto">
+                <embed className='modalWeb rounded' src={project?.web}></embed>
+              </div>
+              <div className="col-md-6 m-auto text-dark">
+              <div className="modalPsection">
+                <div className="d-flex justify-content-between">
+                  <div>           
+                    <a className="github-button" href={project?.gitC} data-icon="octicon-star" data-show-count="true" aria-label={project?.gitStar}>Star</a>
+                  </div>
+                  <div> 
+                    <small className="text-sky font-monospace">{project?.title}</small>
+                    <h3 className='text-lightest-slate'>{project?.name}</h3>
+                  </div>
                 </div>
-                <div className="py-3 my-4">
-                    <div className="row row-cols-2 row-cols-md-2 p-3 m-2">
-                        <Slide left>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb1} alt="" /></div>
-                        </Slide>
-                        <Slide right>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb2} alt="" /></div>
-                        </Slide>
-                        <Slide left>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb3} alt="" /></div>
-                        </Slide>
-                        <Slide right>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb4} alt="" /></div>
-                        </Slide>
-                        <Slide left>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb5} alt="" /></div>
-                        </Slide>
-                        <Slide right>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb6} alt="" /></div>
-                        </Slide>
-                        <Slide left>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb7} alt="" /></div>
-                        </Slide>
-                        <Slide right>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb8} alt="" /></div>
-                        </Slide>
-                        <Slide left>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb9} alt="" /></div>
-                        </Slide>
-                        <Slide right>
-                            <div className="col shadow p-4 "><img className="img-fluid  img-hover" src={projectDetails?.imageweb10} alt="" /></div>
-                        </Slide>
+                   
+                    <div className="text-lightest-slate bg-skill rounded modalPdetails">
+                      <p>{project?.shortDesc}</p>
                     </div>
-                </div>
+
+                    <div className="mt-3 modalTech text-light-slate font-monospace">
+                      <small>{project?.tech}</small>
+                    </div>
+
+                    <div className="mt-3">
+                      <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href={project?.gitC}><RiGithubLine title= "Source Code" className="icon-hover" /></a>
+
+                      <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href={project?.gitS}><RiGitBranchLine title= "Server Source Code" className="icon-hover" /></a>
+
+                      <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href={project?.web}><RiExternalLinkLine title= "Live Demo" className="icon-hover" /></a>
+                      
+                    </div> 
+                    
+                  </div>
+                 
+              </div>
+              <div style={{marginTop:"-20px"}} className="text-end">
+                    <button onClick={handleClose} className="btn bg-skill-back btn-lg text-sky my-btn rounded-pill"> <RiCloseLine className="fs-2"/> </button>
+            </div>  
             </div>
         </div>
-    );
+      
+      </Modal>
+
+     
+    </>
+  );
 };
 
 export default SingleProject;

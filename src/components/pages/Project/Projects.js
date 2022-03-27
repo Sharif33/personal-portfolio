@@ -14,6 +14,7 @@ const Projects = () => {
       <div className='text-center mb-5'>
                         <h1 className='text-back'>PROJECTS</h1>
                          <h3 className=""><span className='bottom-border text-lightest-slate'>MY<span className='text-info'> WORK</span></span></h3>
+                         <p className="text-info">Feature Projects</p>
                     </div>
             <div className="row p-container">
               <div className="col-md-10 mx-auto col-sm-12 p-2">

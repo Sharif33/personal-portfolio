@@ -7,7 +7,7 @@ import Home from "./components/pages/Home/Home";
 import BikeValley from "./components/pages/Project/BikeValley/BikeValley";
 import Phono from "./components/pages/Project/Phono";
 import Project from "./components/pages/Project/Project";
-import SingleProject from "./components/pages/Project/SingleProject";
+// import SingleProject from "./components/pages/Project/SingleProject";
 import logo from './images/rashed-logo.png';
 import ScrollToTop from "react-scroll-to-top";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
@@ -38,9 +38,9 @@ function App() {
           <Route path="phono" element={<Phono/>} />
           <Route path="bike" element={<BikeValley/>} />
           <Route path="blogs" element={<Blogs />} />
-          <Route path="projects/project/:id" element={<SingleProject />} />
-          <Route path="home/project/:id" element={<SingleProject />} />
-          <Route path="/project/:id" element={<SingleProject />} />
+          {/* <Route path="projects/project/:id" element={<SingleProject />} /> */}
+          {/* <Route path="projects/:id" element={<SingleProject />} /> */}
+          {/* <Route path="/project/:id" element={<SingleProject />} /> */}
 
           <Route path="Sdashboard" element={<Dashboard />}>
               <Route index element={<DashboardHome/>}/>

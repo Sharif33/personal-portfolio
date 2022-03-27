@@ -52,14 +52,10 @@ const AddProjects = () => {
                 <input {...register("tech")} placeholder="Technology used" />
                 <input {...register("gitC")} placeholder="Source Code (Client)" />
                 <input {...register("gitS")} placeholder="Source Code (Server)" />
-                <input {...register("web")} placeholder="Website Link" /> 
                     </div>
                     <div className="col-md-6">
-                        <input {...register("f1")} placeholder="Feature 1" />
-                <input {...register("f2")} placeholder="Feature 2" />
-                <input {...register("f3")} placeholder="Feature 3" />
-                <input {...register("f4")} placeholder="Feature 4" />
-                <input {...register("f5")} placeholder="Feature 5" />
+                <input {...register("gitStar")} placeholder="Star Sharif33/sharif-portfolio on GitHub" />
+                <input {...register("web")} placeholder="Website Link" /> 
                 <textarea style={{height:'10.5em'}} {...register("shortDesc", { required: true, maxLength: 500 })} placeholder="Short Description" />
                 <input className="btn btn-primary" type="submit" />
                     </div>

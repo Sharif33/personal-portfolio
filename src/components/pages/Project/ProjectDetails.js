@@ -1,13 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import theme from '../../../images/theme.png';
+import SingleProject from './SingleProject';
+// import { Link } from 'react-router-dom';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from 'react-responsive-carousel';
 
 const ProjectDetails = ({ project }) => {
-    const { id, name, website, imageweb1, imageweb2, imageweb3, imageweb4 } = project;
+    const [openProject, setOpenProject] = React.useState(false);
+    const handleOpen = () => setOpenProject(true);
+    const handleClose = () => setOpenProject(false);
+    const {name,title} = project;
     return (
         <div className="my-3">
-            <div className="bg-light shadow rounded py-3" style={{ height: "100%" }}>
+            
+            <div onClick={handleOpen} className='col p-2 text-light-slate'>
+                <h5> <span className='p-2 rounded-top' > {name}</span></h5>
+                <img title={title} className='img-fluid img-hover rounded' src={theme} alt="" />
+                
+            </div>
+                
+            
+            {/* <div className="bg-light shadow rounded py-3" style={{ height: "100%" }}>
                 <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} showStatus={false}>
                     <div>
                         <img src={imageweb1} alt="" />
@@ -42,7 +55,14 @@ const ProjectDetails = ({ project }) => {
                     <a className="text-decoration-none px-2" rel="noreferrer" target="_blank" href={website}><button className="btn btn-custom-2">Live Preview</button></a>
                     <Link to={`project/${id}`}><button className="btn  btn-custom">See Details</button></Link>
                 </div>
-            </div>
+            </div> */}
+
+                <SingleProject
+                handleClose={handleClose}
+                project={project}
+                openProject={openProject}
+                />
+
         </div>
     );
 };
