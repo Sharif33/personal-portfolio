@@ -1,6 +1,7 @@
 import { RiGithubLine, RiGitBranchLine, RiExternalLinkLine,RiCloseLine } from "react-icons/ri";
 import Modal from "@mui/material/Modal";
 import { useEffect } from "react";
+import GitHubButton from 'react-github-btn';
 
 /* const style = {
   position: "absolute",
@@ -17,19 +18,19 @@ import { useEffect } from "react";
 
 const SingleProject = ({ project, openProject, handleClose }) => {
 
-  useEffect(() => {
+  // useEffect(() => {
        
-    const script = document.createElement('script');
-    script.src = 'https://buttons.github.io/buttons.js';
-    script.async = true;
-    script.defer = true;
+  //   const script = document.createElement('script');
+  //   script.src = 'https://buttons.github.io/buttons.js';
+  //   script.async = true;
+  //   script.defer = true;
 
-    document.body.appendChild(script);
+  //   document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -48,8 +49,8 @@ const SingleProject = ({ project, openProject, handleClose }) => {
               <div className="col-md-6 m-auto text-dark">
               <div className="modalPsection">
                 <div className="d-flex justify-content-between">
-                  <div>           
-                    <a className="github-button" href={project?.gitC} data-icon="octicon-star" data-show-count="true" aria-label={project?.gitStar}>Star</a>
+                  <div>                          
+                    <GitHubButton href={project?.gitC} data-icon="octicon-star" data-show-count="true" aria-label={project?.gitStar}>Star</GitHubButton>
                   </div>
                   <div> 
                     <small className="text-sky font-monospace">{project?.title}</small>

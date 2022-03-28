@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import GitHubButton from 'react-github-btn'
 
 const Footer = () => {
     const year = new Date ().getFullYear();
@@ -33,19 +34,21 @@ const Footer = () => {
     //       document.body.removeChild(script);
     //     };
     //   }, []);
-    useEffect(() => {
+
+
+    // useEffect(() => {
        
-        const script = document.createElement('script');
-        script.src = 'https://buttons.github.io/buttons.js';
-        script.async = true;
-        script.defer = true;
+    //     const script = document.createElement('script');
+    //     script.src = 'https://buttons.github.io/buttons.js';
+    //     script.async = true;
+    //     script.defer = true;
     
-        document.body.appendChild(script);
+    //     document.body.appendChild(script);
     
-        return () => {
-          document.body.removeChild(script);
-        };
-      }, []);
+    //     return () => {
+    //       document.body.removeChild(script);
+    //     };
+    //   }, []);
 
 
 
@@ -60,11 +63,9 @@ const Footer = () => {
                                 {/* <div className="github-card" data-github="Sharif33" data-width="350" data-height="" data-theme="default">
                                 </div>    */}
                         <div className='m-2 text-center'>
-                            <a className="github-button" 
-                            href="https://github.com/Sharif33" data-size="large" data-show-count="true" 
-                            aria-label="Follow @Sharif33 on GitHub">Follow @Sharif33
-                            </a>
+                            <GitHubButton href="https://github.com/Sharif33" data-size="large" data-show-count="true" aria-label="Follow @Sharif33 on GitHub">Follow @Sharif33</GitHubButton>
                         </div>
+                        
                         {/* Youtube */}
 
                         <div className='m-2  text-center'>

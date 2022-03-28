@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
@@ -16,8 +17,10 @@ const EditProjects = () => {
             .then(data => setProjects(data))
     }, [id])
 
-    const handleUpdate = (projects) => {
-        // console.log(id);
+    const handleUpdate = (data) => {
+        data.date=new Date().toDateString();
+        data.time=new Date().toLocaleTimeString();
+        console.log(data);
         Swal.fire({
             title: 'Are you sure?',
             text: "You wanted to update this projects!",
@@ -31,22 +34,17 @@ const EditProjects = () => {
             if (result.isConfirmed) 
          {
 
-            fetch(`https://sharif-rashed.herokuapp.com/projects/${id}`, {
-                method: "PUT",
-                headers: { 'content-type': 'application/json' },
-                body: JSON.stringify(projects)
-            })
-                .then(res => res.json())
-                .then(data => {
-                    // console.log(data);
-                    if (data) {
+            axios.put(`https://sharif-rashed.herokuapp.com/projects/${id}`, data)
+          
+                .then(res => {
+                    if (res.data) {
                         Swal.fire(
                             'Done!',
                             'Updated successfully!',
                             'success'
                           )
                         // window.location.reload();
-                        setProjects(projects);
+                        setProjects(data);
                         reset();
                     }
                 })
@@ -83,6 +81,8 @@ const EditProjects = () => {
                     </div>
                     <div className="col-md-6">
                         <input {...register("gitStar")} defaultValue={projects?.gitStar} />
+                        <input {...register("date")} defaultValue={projects?.date} readOnly />
+                        <input {...register("time")} defaultValue={projects?.time} readOnly />
                 <input {...register("web")} defaultValue={projects?.web} /> 
                 <textarea style={{height:'10.5em'}} {...register("shortDesc", { required: true, maxLength: 500 })} defaultValue={projects?.shortDesc} />
                 <input className="btn btn-primary" type="submit" />

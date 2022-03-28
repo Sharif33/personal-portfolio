@@ -21,7 +21,7 @@ import AddTaskOutlinedIcon from '@mui/icons-material/AddTaskOutlined';
 import rashed from '../../../images/rashed-logo.png';
 import './Dashboard.css';
 
-const drawerWidth = 220;
+const drawerWidth = 230;
 
 const Dashboard = (props) => {
     const { window } = props;
