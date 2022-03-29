@@ -58,9 +58,6 @@ function App() {
     {
       spinner && <div>
        <img className="img-fluid loader" src={logo} alt="" />
-       <div className="loader-2">
-
-       </div>
       </div>
     }
     

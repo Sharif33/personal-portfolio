@@ -47,7 +47,7 @@
           .back-to-top {
             position: fixed;
             bottom: 0px;
-            right: 0px;
+            left: 0px;
             font-size: 20px;
             background: red;
             color: white;
