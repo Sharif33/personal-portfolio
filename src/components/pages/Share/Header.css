@@ -38,3 +38,26 @@
         .footer-color{
             background: linear-gradient(45deg,#7b1fa2, #303f9f) !important;
         }
+
+
+        /* ScrollTop style */
+
+
+          
+          .back-to-top {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            font-size: 20px;
+            background: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 7px;
+            border: none;
+            /* box-shadow: 0 5px 10px #ccc; */
+            z-index: 1;
+          }
+          
+          /* .back-to-top:hover {
+            background: red;
+          } */

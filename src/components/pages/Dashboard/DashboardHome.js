@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineFundProjectionScreen,AiOutlineStar,AiFillProject } from "react-icons/ai";
+import Rating from '@mui/material/Rating';
 
 const DashboardHome = () => {
 
@@ -34,7 +35,7 @@ const DashboardHome = () => {
 
     const total=(reviews.reduce((total,currentItem) =>  total = parseFloat(total + currentItem.rating) , 0 ));
 
-    const avg = Math.round(total/(projects?.length));
+    const avg =(total/(projects?.length)).toFixed(1);
 
     // let sum = reviews.reduce(function(prev, current) {
     //     return parseInt(prev + +current.rating)
@@ -78,7 +79,7 @@ const DashboardHome = () => {
                         </div>
                         <div className='text-center w-100'>
                               <h5 className='text-light-slate font-custom'>Total Reviews: <br /><span className="fs-3 text-danger"> {reviews?.length}</span></h5>
-                              <h5 className='text-light-slate font-custom'>Average Ratings: <br /><span className="fs-3 text-danger"> {avg}</span></h5>
+                              <h5 className='text-light-slate font-custom'>Average Ratings: <br /> <Rating name="half-rating-read" defaultValue={avg} precision={0.5} readOnly /> <span className="fs-3 text-danger"> {avg}</span></h5>
                               
                         </div>
                     </div>

@@ -38,7 +38,7 @@ const Header = () => {
                                     {/* style={({ isactive }) => ({ color: isactive ? '#64ffda' : 'white' }) */}
                                 </li>                               
                                 <li className="nav-item">
-                                    <NavHashLink  className="nav-link active mx-1" to="/home#projects">Projects</NavHashLink>
+                                    <NavHashLink  className="nav-link active mx-1" to="/home#projects">Portfolio</NavHashLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavHashLink  className="nav-link active mx-1  " to="/home#blogs">Blogs</NavHashLink>

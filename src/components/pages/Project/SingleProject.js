@@ -66,19 +66,28 @@ const SingleProject = ({ project, openProject, handleClose }) => {
                       <small>{project?.tech}</small>
                     </div>
 
-                    <div className="mt-3">
-                      <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href={project?.gitC}><RiGithubLine title= "Source Code" className="icon-hover" /></a>
+                    <div className="mt-2 d-flex align-items-center justify-content-md-between"> 
+                     <div>
+                    <button onClick={handleClose} className="btn text-sky my-btn close-btn-2"> <RiCloseLine className="fs-2"/> close </button>
+            </div>  
+
+            <div>
+               <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href={project?.gitC}><RiGithubLine title= "Source Code" className="icon-hover" /></a>
 
                       <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href={project?.gitS}><RiGitBranchLine title= "Server Source Code" className="icon-hover" /></a>
 
                       <a className="text-decoration-none text-lightest-slate mx-2 fs-3" rel="noreferrer" target="_blank" href={project?.web}><RiExternalLinkLine title= "Live Demo" className="icon-hover" /></a>
+
+            </div>
+                     
+                     
                       
                     </div> 
                     
                   </div>
                  
               </div>
-              <div style={{marginTop:"-20px"}} className="text-end">
+              <div style={{marginTop:"-20px"}} className="text-end close-btn">
                     <button onClick={handleClose} className="btn bg-skill-back btn-lg text-sky my-btn rounded-pill"> <RiCloseLine className="fs-2"/> </button>
             </div>  
             </div>

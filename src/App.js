@@ -9,12 +9,12 @@ import Phono from "./components/pages/Project/Phono";
 import Project from "./components/pages/Project/Project";
 // import SingleProject from "./components/pages/Project/SingleProject";
 import logo from './images/rashed-logo.png';
-import ScrollToTop from "react-scroll-to-top";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
 import DashboardHome from "./components/pages/Dashboard/DashboardHome";
 import AddProjects from "./components/pages/Dashboard/AddProjects";
 import EditProjects from "./components/pages/Dashboard/EditProjects";
 import ManageProjects from "./components/pages/Dashboard/ManageProjects";
+import ScrollTop from "./components/pages/Share/ScrollTop";
 
 function App() {
   const [ spinner, setSpinner ] = React.useState(true);
@@ -28,7 +28,8 @@ function App() {
       !spinner && 
     <div className="App">
       <Router>
-      <ScrollToTop smooth color="#112240" />
+      {/* <ScrollToTop smooth color="#112240" /> */}
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />
@@ -50,7 +51,7 @@ function App() {
             </Route>
 
         </Routes>
-        
+        <ScrollTop/>
       </Router>
     </div>
     }
